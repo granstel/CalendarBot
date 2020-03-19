@@ -1,4 +1,4 @@
-﻿using System;
+﻿using InstaParse.Parsers;
 
 namespace CalendarBot.Parser
 {
@@ -6,7 +6,7 @@ namespace CalendarBot.Parser
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            new ConsultantParser().ParseCalendar();
         }
     }
 }
