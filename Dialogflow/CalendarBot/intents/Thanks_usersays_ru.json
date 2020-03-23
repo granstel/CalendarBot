@@ -1,0 +1,62 @@
+[
+  {
+    "id": "f9928635-211a-4ce3-ae1e-e69d8dbd9a6d",
+    "data": [
+      {
+        "text": "Это было полезно",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b55009d9-2a2e-4179-8ff4-f7b89e12ab8f",
+    "data": [
+      {
+        "text": "Спасибо за инфорамцию",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4311207c-f642-4024-b4c8-b17679ac47cc",
+    "data": [
+      {
+        "text": "Спасибо",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "da5c3fec-cb5b-4e0b-b412-a568eb63ab7f",
+    "data": [
+      {
+        "text": "Круто спасибо",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c8491ea7-095c-498d-b346-dfce0c935c50",
+    "data": [
+      {
+        "text": "Класс спасибо",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

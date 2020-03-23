@@ -1,5 +1,23 @@
 [
   {
+    "id": "3bdab70c-9cd5-437c-ad6f-3fc236ea682d",
+    "data": [
+      {
+        "text": "когда ближайшие ",
+        "userDefined": false
+      },
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "3aa4bf31-48db-4487-9400-5ae92339825c",
     "data": [
       {

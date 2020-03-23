@@ -1,0 +1,86 @@
+[
+  {
+    "id": "2fcc2517-5704-4058-856a-53245a17eec9",
+    "data": [
+      {
+        "text": "Где я",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9d6d5745-8386-4612-ac85-2141ec078be8",
+    "data": [
+      {
+        "text": "Куда я попала",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0817fae4-8ae9-4425-b73d-dcc271563684",
+    "data": [
+      {
+        "text": "Куда я попал",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "61ac61ec-90f4-4e0a-9e29-b91cc6b0db2d",
+    "data": [
+      {
+        "text": "Что ты умеешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3ac90192-6f99-403f-b3a7-09860db6445d",
+    "data": [
+      {
+        "text": "Помоги мне",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d4fe00ea-1d76-4fe3-af3a-a4dc5c20d6ed",
+    "data": [
+      {
+        "text": "Помоги",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bfdb4a0c-5b7b-46de-b52b-682d45054a60",
+    "data": [
+      {
+        "text": "Помощь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

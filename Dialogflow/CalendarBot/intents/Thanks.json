@@ -1,12 +1,11 @@
 {
-  "id": "c63c6ce6-42aa-46b2-96a7-3f0ac3cd5386",
-  "name": "Default Fallback Intent",
+  "id": "1ab41364-7608-49ea-b974-0cd7ee5ca59e",
+  "name": "Thanks",
   "auto": true,
   "contexts": [],
   "responses": [
     {
       "resetContexts": false,
-      "action": "input.unknown",
       "affectedContexts": [],
       "parameters": [],
       "messages": [
@@ -15,12 +14,10 @@
           "lang": "ru",
           "condition": "",
           "speech": [
-            "Прости, не совсем понимаю, о чём ты",
-            "Прости, это не совсем понятно",
-            "Эмм... Можешь сказать то же самое, но по-другому?",
-            "Попробуй, пожалуйста, сказать по-другому",
-            "Что?",
-            "Что-что?"
+            "Мне нравится приносить пользу!",
+            "Люблю помогать!",
+            "Мне нравится помогать!",
+            "Люблю приносить пользу!"
           ]
         }
       ],
@@ -31,7 +28,7 @@
   "priority": 500000,
   "webhookUsed": false,
   "webhookForSlotFilling": false,
-  "fallbackIntent": true,
+  "fallbackIntent": false,
   "events": [],
   "conditionalResponses": [],
   "condition": "",

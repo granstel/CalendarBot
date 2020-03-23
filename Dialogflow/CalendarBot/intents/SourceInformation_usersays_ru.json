@@ -1,0 +1,67 @@
+[
+  {
+    "id": "bd6c2093-a96a-466f-8a33-99cbede6a017",
+    "data": [
+      {
+        "text": "Какой источник",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f7c450e-2cf1-4596-9057-1a5d22a649a4",
+    "data": [
+      {
+        "text": "Где ты это взял",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8b4d7a51-2e57-45d2-9dd9-cec5f540361b",
+    "data": [
+      {
+        "text": "Откуда ты это взял",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1726ab4f-df20-4df7-ba5c-6198c9aad270",
+    "data": [
+      {
+        "text": "Откуда ты это знаешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "602b72ef-f410-4154-9624-39ee529ce7d0",
+    "data": [
+      {
+        "text": "Откуда ",
+        "userDefined": false
+      },
+      {
+        "text": "инфа",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,37 @@
+{
+  "id": "25286758-4b03-46f7-b8cf-ed1482099ace",
+  "name": "SourceInformation",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ru",
+          "condition": "",
+          "speech": [
+            "Эту инфу можно найти по запросу \"производственный календарь\". Что ещё рассказать?",
+            "Эту информацию легко увидеть по запросу в гугле \"производственный календарь\". Что-то ещё подсказать?",
+            "Это легко отыскать по запросу в Яндексе \"производственный календарь\". Что ещё рассказать?",
+            "Эту информацию можно увидеть по запросу в гугле \"производственный календарь\". Что-то ещё подсказать?",
+            "Эту инфу легко найти по запросу \"производственный календарь\". Что-то ещё подсказать?"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

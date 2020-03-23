@@ -1,5 +1,95 @@
 [
   {
+    "id": "4e90b20a-e23f-478e-a3ee-a7971d650dfe",
+    "data": [
+      {
+        "text": "25е",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " - это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "9983cf2a-f13f-4db0-a26e-cfd01f3e55d6",
+    "data": [
+      {
+        "text": "25",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "05187ccc-1782-415a-994b-5f1e45b09422",
+    "data": [
+      {
+        "text": "25е",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b98f40f7-3076-4ec8-925a-7534174b0586",
+    "data": [
+      {
+        "text": "что там ",
+        "userDefined": false
+      },
+      {
+        "text": "25го",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "f846c955-53b3-4d78-a6db-3ab5f11132f9",
+    "data": [
+      {
+        "text": "25",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": "е - это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "29d8c860-5fc8-42da-8bdc-b7388bd1a24a",
     "data": [
       {
