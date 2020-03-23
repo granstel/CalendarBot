@@ -1,0 +1,176 @@
+[
+  {
+    "id": "29d8c860-5fc8-42da-8bdc-b7388bd1a24a",
+    "data": [
+      {
+        "text": "вторник через неделю",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "689e16dc-a305-4493-9fe3-ea4dd153a947",
+    "data": [
+      {
+        "text": "30 февраля",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8b4c0bb-a0ee-4568-bb36-978669e19c8f",
+    "data": [
+      {
+        "text": "29 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "3ce06d9a-c65c-4493-8086-fb1f6ece437b",
+    "data": [
+      {
+        "text": "29 февраля 21го года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b7730de8-686a-46c3-a972-e54d726f2913",
+    "data": [
+      {
+        "text": "28 февраля следующего года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "6ed4c9ce-10f9-424b-9eea-411814f3318a",
+    "data": [
+      {
+        "text": "29 февраля следующего года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "10301658-4a94-4832-b509-185abf83a215",
+    "data": [
+      {
+        "text": "28 февраля 2021 года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "08b8f3f7-2520-477d-8322-ae184930cda3",
+    "data": [
+      {
+        "text": "29 февраля 2021 года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "2404ed83-deec-4e59-87b5-8354c7005173",
+    "data": [
+      {
+        "text": "30 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "abf3c23a-733e-4cc4-95c5-6dc3cfe2ea42",
+    "data": [
+      {
+        "text": "29 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " 21го года",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c1453d40-05a3-4559-8cdd-b5ef448ab395",
+    "data": [
+      {
+        "text": "во ",
+        "userDefined": false
+      },
+      {
+        "text": "вторник через неделю",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "090cadbc-3f7c-4b87-82e6-ed097fb31738",
+    "data": [
+      {
+        "text": "двадцать девятое марта",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,0 +1,9 @@
+{
+  "id": "d8ef9caf-0ae9-43a8-9764-294f5891a9a0",
+  "name": "DayType",
+  "isOverridable": true,
+  "isEnum": false,
+  "isRegexp": false,
+  "automatedExpansion": true,
+  "allowFuzzyExtraction": false
+}
