@@ -42,6 +42,11 @@ namespace CalendarBot.Api
                 app.UseMiddleware<HttpLogMiddleware>();
             }
 
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+
             app.UseMvc();
         }
     }
