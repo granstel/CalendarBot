@@ -1,8 +1,6 @@
 ﻿using Autofac;
 using Google.Apis.Auth.OAuth2;
 using Google.Cloud.Dialogflow.V2;
-using CalendarBot.Services;
-using CalendarBot.Services.Clients;
 using CalendarBot.Services.Configuration;
 using Grpc.Auth;
 using RestSharp;
@@ -15,8 +13,6 @@ namespace CalendarBot.Api.DependencyModules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<RestClient>().As<IRestClient>();
-            
-            builder.RegisterType<QnaClient>().As<IQnaClient>();
             
             builder.Register(RegisterDialogflowClient).As<SessionsClient>();
 

@@ -9,5 +9,7 @@
         public DialogflowConfiguration Dialogflow { get; set; }
 
         public RedisConfiguration Redis { get; set; }
+
+        public string CalendarSourceFormat { get; set; }
     }
 }

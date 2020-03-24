@@ -23,8 +23,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarBot.Messengers.Yand
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalendarBot.Messengers.Yandex.Tests", "CalendarBot.Messengers.Yandex.Tests\CalendarBot.Messengers.Yandex.Tests.csproj", "{BBF30B7F-5328-492A-8EC6-7F61F49F2AC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalendarBot.Parser", "CalendarBot.Parser\CalendarBot.Parser.csproj", "{5B275E22-A4DF-4DFB-97F1-7488CD976ECA}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,10 +61,6 @@ Global
 		{BBF30B7F-5328-492A-8EC6-7F61F49F2AC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBF30B7F-5328-492A-8EC6-7F61F49F2AC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBF30B7F-5328-492A-8EC6-7F61F49F2AC5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5B275E22-A4DF-4DFB-97F1-7488CD976ECA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5B275E22-A4DF-4DFB-97F1-7488CD976ECA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5B275E22-A4DF-4DFB-97F1-7488CD976ECA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5B275E22-A4DF-4DFB-97F1-7488CD976ECA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

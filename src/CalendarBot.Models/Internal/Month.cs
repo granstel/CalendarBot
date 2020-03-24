@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace InstaParse
+namespace CalendarBot.Models.Internal
 {
     public class Month
     {

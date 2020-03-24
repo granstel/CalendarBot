@@ -1,6 +1,6 @@
 ﻿using HtmlAgilityPack;
 
-namespace InstaParse.Interfaces
+namespace CalendarBot.Services
 {
     public interface IHtmlParser
     {

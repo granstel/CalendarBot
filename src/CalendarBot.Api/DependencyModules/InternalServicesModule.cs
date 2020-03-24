@@ -1,6 +1,7 @@
 ﻿using Autofac;
 using CalendarBot.Services;
 using CalendarBot.Services.Configuration;
+using CalendarBot.Services.Parsers;
 using CalendarBot.Services.Serialization;
 using GranSteL.Helpers.Redis;
 using StackExchange.Redis;
@@ -12,9 +13,10 @@ namespace CalendarBot.Api.DependencyModules
         protected override void Load(ContainerBuilder builder)
         {
             builder.RegisterType<ConversationService>().As<IConversationService>();
-            builder.RegisterType<QnaService>().As<IQnaService>();
             builder.RegisterType<DialogflowService>().As<IDialogflowService>();
             builder.RegisterType<CustomJsonSerializer>().AsSelf();
+            builder.RegisterType<HtmlParser>().As<IHtmlParser>();
+            builder.Register(RegisterConsultantParser).As<IConsultantParser>();
 
             builder.Register(RegisterCacheService).As<IRedisCacheService>().SingleInstance();
         }
@@ -28,6 +30,17 @@ namespace CalendarBot.Api.DependencyModules
             var service = new RedisCacheService(db, configuration.KeyPrefix);
 
             return service;
+        }
+
+        private object RegisterConsultantParser(IComponentContext context)
+        {
+            var htmlParser = context.Resolve<IHtmlParser>();
+            var cache = context.Resolve<IRedisCacheService>();
+            var configuration = context.Resolve<AppConfiguration>();
+
+            var parser = new ConsultantParser(htmlParser, cache, configuration.CalendarSourceFormat);
+
+            return parser;
         }
     }
 }

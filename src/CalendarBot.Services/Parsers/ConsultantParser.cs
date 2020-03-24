@@ -1,27 +1,31 @@
-﻿using System.Collections.Generic;
-using System.Configuration;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
-using InstaParse.Interfaces;
+using CalendarBot.Models.Internal;
+using GranSteL.Helpers.Redis;
 using NLog;
 
-namespace InstaParse.Parsers
+namespace CalendarBot.Services.Parsers
 {
-    public class ConsultantParser
+    public class ConsultantParser : IConsultantParser
     {
-        private readonly IHtmlParser _htmlParser;
-
         private readonly Logger _log = LogManager.GetCurrentClassLogger();
 
-        private readonly string _url = ConfigurationManager.AppSettings["consultantUrl"];
+        private readonly IHtmlParser _htmlParser;
+        private readonly IRedisCacheService _cache;
+        private readonly string _calendarSourceFormat;
 
-
-        public ConsultantParser()
+        public ConsultantParser(IHtmlParser htmlParser, IRedisCacheService cache, string calendarSourceFormat)
         {
-            _htmlParser = new HtmlParser();
+            _htmlParser = htmlParser;
+            _cache = cache;
+            _calendarSourceFormat = calendarSourceFormat;
         }
 
-        public void ParseCalendar()
+        public IDictionary<string, Month> ParseCalendar(string year)
         {
+            var _url = string.Format(_calendarSourceFormat, year);
+
             var document = _htmlParser.GetDocumentByUrl(_url);
 
             var calendars = document.DocumentNode.SelectNodes("//*[@class=\"cal\"]");
@@ -45,23 +49,34 @@ namespace InstaParse.Parsers
 
                 var holidays = holidaysNodes?.Select(n => n.InnerText).ToList();
 
-                if(holidays != null)
+                if (holidays != null)
                     month.Holidays.AddRange(holidays);
 
                 var preHolidaysNodes = calendar.SelectNodes($"{calendar.XPath}//td[@class=\"preholiday\"]");
 
                 var preHolidays = preHolidaysNodes?.Select(n => n.InnerText).ToList();
 
-                if(preHolidays != null)
+                if (preHolidays != null)
                     month.PreHolidays.AddRange(preHolidays);
 
                 var weekNodes = calendar.SelectNodes($"{calendar.XPath}//td[@class=\"weekend\"]");
 
                 var weekends = weekNodes.Select(n => n.InnerText).ToList();
 
-                if(weekNodes != null)
+                if (weekNodes != null)
                     month.Weekends.AddRange(weekends);
             }
+
+            try
+            {
+                _cache.Add($"Calendar:{year}", monthDictionary);
+            }
+            catch(Exception e)
+            {
+                _log.Error(e, $"Can't add calendar for {year}");
+            }
+
+            return monthDictionary;
         }
     }
 }
