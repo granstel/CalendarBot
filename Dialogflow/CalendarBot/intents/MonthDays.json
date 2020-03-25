@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "cb860bb1-5883-442f-8d7a-f245be6166fa",
+          "id": "80c7237d-2cc3-4788-aa56-495228e6739b",
           "required": false,
           "dataType": "@DayType",
           "name": "daytype",
@@ -18,14 +18,26 @@
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],
           "outputDialogContexts": [],
-          "isList": false
+          "isList": true
         },
         {
-          "id": "c466cccc-018f-4364-a1a1-1aa760d243a0",
+          "id": "42975baf-e20c-49f8-a903-157ec6ff45b0",
           "required": false,
           "dataType": "@sys.date-period",
           "name": "date-period",
           "value": "$date-period",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "2bd3561e-21ff-465a-8f7c-c53b3fb2262a",
+          "required": false,
+          "dataType": "",
+          "name": "date-period-original",
+          "value": "$date-period.original",
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],
@@ -38,7 +50,7 @@
           "type": 0,
           "lang": "ru",
           "condition": "",
-          "speech": []
+          "speech": "В $date-period-original {0} рабочих и {1} выходных"
         }
       ],
       "defaultResponsePlatforms": {},
