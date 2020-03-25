@@ -34,6 +34,9 @@
   "events": [
     {
       "name": "WELCOME"
+    },
+    {
+      "name": "GOOGLE_ASSISTANT_WELCOME"
     }
   ],
   "conditionalResponses": [],

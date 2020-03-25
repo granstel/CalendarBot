@@ -1,5 +1,17 @@
 [
   {
+    "id": "1c454c59-2e20-422e-85be-03d47a5d017c",
+    "data": [
+      {
+        "text": "привет",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "bcabe82b-6c32-4290-845b-b6ebd68e019f",
     "data": [
       {
@@ -16,18 +28,6 @@
     "data": [
       {
         "text": "здравствуй",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "c0e79374-af81-402b-a054-72c90acd3755",
-    "data": [
-      {
-        "text": "привет",
         "userDefined": false
       }
     ],
