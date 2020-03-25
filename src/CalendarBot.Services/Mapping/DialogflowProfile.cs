@@ -57,6 +57,22 @@ namespace CalendarBot.Services.Mapping
 
                     dictionary.Add(field.Key, stringValue);
                 }
+                else if (field.Value.KindCase == Value.KindOneofCase.ListValue)
+                {
+                    var stringValues = new List<string>();
+
+                    foreach (var valueField in field.Value.ListValue.Values)
+                    {
+                        if (valueField.KindCase == Value.KindOneofCase.StringValue)
+                        {
+                            stringValues.Add(valueField.StringValue);
+                        }
+                    }
+
+                    var stringValue = string.Join("/", stringValues);
+
+                    dictionary.Add(field.Key, stringValue);
+                }
             }
 
             return dictionary;
