@@ -5,6 +5,6 @@ namespace CalendarBot.Services
 {
     public interface IConsultantParser
     {
-        IDictionary<string, Month> ParseCalendar(string year);
+        ICollection<Month> ParseCalendar(string year);
     }
 }
