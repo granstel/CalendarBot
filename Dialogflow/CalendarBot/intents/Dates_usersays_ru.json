@@ -1,5 +1,45 @@
 [
   {
+    "id": "d0fd5523-8663-46cd-a5b9-14f07eab6a8c",
+    "data": [
+      {
+        "text": "завтра",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " рабочий день?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "97a73ced-cb6b-41b2-b0df-d3521a253dc7",
+    "data": [
+      {
+        "text": "что у нас ",
+        "userDefined": false
+      },
+      {
+        "text": "завтра",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "f4a667ff-a9c2-47d9-a9a4-0a887a5229f9",
     "data": [
       {

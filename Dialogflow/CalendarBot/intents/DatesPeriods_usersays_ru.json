@@ -1,5 +1,157 @@
 [
   {
+    "id": "f50bf0b1-2242-4571-bd2e-2857ef94927e",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "на этой неделе",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 3,
+    "updated": 0
+  },
+  {
+    "id": "1a024144-5a38-4977-add9-0e4ef217319e",
+    "data": [
+      {
+        "text": "эта неделя",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e6bd71f3-3c71-4406-a44e-297d12c2e254",
+    "data": [
+      {
+        "text": "этой неделе",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8503d022-cf0e-44fc-a4ca-ad2d0de0a292",
+    "data": [
+      {
+        "text": "на ",
+        "userDefined": false
+      },
+      {
+        "text": "этой неделе",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "143e851d-434a-4298-a7b2-a82bf32c9a93",
+    "data": [
+      {
+        "text": "рабочий",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " и ",
+        "userDefined": false
+      },
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "апреле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "ed21d0a5-f3f6-40fd-aaed-2a75864118e2",
+    "data": [
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "8d2212df-f62d-4de6-86b8-711eb722f06e",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "2287355c-f9d6-4025-8e6d-6ab462bd54e4",
     "data": [
       {
@@ -80,54 +232,6 @@
     "updated": 0
   },
   {
-    "id": "e9acf870-20a9-4a46-808f-8a420a7525ec",
-    "data": [
-      {
-        "text": "выходные",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "мае",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 2,
-    "updated": 0
-  },
-  {
-    "id": "88cf6fc3-b88f-4b4a-98db-c9519a7a7e3c",
-    "data": [
-      {
-        "text": "выходной",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "мае",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 2,
-    "updated": 0
-  },
-  {
     "id": "8ef898ac-a3c2-4eaa-ac8c-8c9b35ba4025",
     "data": [
       {
@@ -149,40 +253,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "dbeee6ba-630b-4b78-8be8-584e13fb1821",
-    "data": [
-      {
-        "text": "рабочий",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " и ",
-        "userDefined": false
-      },
-      {
-        "text": "выходной",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "апреле",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 2,
     "updated": 0
   },
   {
