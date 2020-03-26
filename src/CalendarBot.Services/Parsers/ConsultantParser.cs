@@ -32,8 +32,10 @@ namespace CalendarBot.Services.Parsers
 
             var monthDictionary = new Dictionary<string, Month>();
 
-            foreach (var calendar in calendars)
+            for (var i = 0; i < calendars.Count(); i++)
             {
+                var calendar = calendars[i];
+
                 var monthNode = calendar.SelectNodes($"{calendar.XPath}//th[@class=\"month\"]");
 
                 var monthName = monthNode.Select(m => m.InnerText).FirstOrDefault();
@@ -44,6 +46,42 @@ namespace CalendarBot.Services.Parsers
                 {
                     monthDictionary.Add(monthName, month);
                 }
+
+                var days = calendar.SelectNodes($"{calendar.XPath}//td");
+
+                foreach (var day in days)
+                {
+                    if (!int.TryParse(day.InnerText, out var number))
+                    {
+                        _log.Warn($"Can't parse {day.InnerText} from {day.XPath}, {nameof(monthName)}={monthName}");
+
+                        continue;
+                    }
+
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value == "inactively"))
+                    {
+                        continue;
+                    }
+
+                    var monthDay = new Day(number);
+
+                    month.Days.Add(monthDay);
+
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value == "preholiday"))
+                    {
+                        monthDay.Type = DayType.PreHoliday;
+
+                        continue;
+                    }
+
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value.Contains("weekend")))
+                    {
+                        monthDay.Type = DayType.NotWork;
+
+                        continue;
+                    }
+                }
+
 
                 var holidaysNodes = calendar.SelectNodes($"{calendar.XPath}//td[@class=\"holiday weekend\"]");
 
@@ -71,7 +109,7 @@ namespace CalendarBot.Services.Parsers
             {
                 _cache.Add($"Calendar:{year}", monthDictionary);
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 _log.Error(e, $"Can't add calendar for {year}");
             }
