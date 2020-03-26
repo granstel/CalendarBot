@@ -9,7 +9,7 @@ namespace CalendarBot.Services.Parsers
 {
     public class ConsultantParser : IConsultantParser
     {
-        private readonly Logger _log = LogManager.GetCurrentClassLogger();
+        private readonly Logger _log = LogManager.GetLogger(nameof(ConsultantParser));
 
         private readonly IHtmlParser _htmlParser;
         private readonly IRedisCacheService _cache;
@@ -28,15 +28,15 @@ namespace CalendarBot.Services.Parsers
 
             var document = _htmlParser.GetDocumentByUrl(_url);
 
-            var calendars = document.DocumentNode.SelectNodes("//*[@class=\"cal\"]");
+            var htmlCalendars = document.DocumentNode.SelectNodes("//*[@class=\"cal\"]");
 
-            var monthList = new List<Month>();
+            var calendar = new List<Month>();
 
-            for (var i = 0; i < calendars.Count(); i++)
+            for (var i = 0; i < htmlCalendars.Count(); i++)
             {
-                var calendar = calendars[i];
+                var htmlCalendar = htmlCalendars[i];
 
-                var monthNode = calendar.SelectNodes($"{calendar.XPath}//th[@class=\"month\"]");
+                var monthNode = htmlCalendar.SelectNodes($"{htmlCalendar.XPath}//th[@class=\"month\"]");
 
                 var monthName = monthNode.Select(m => m.InnerText).FirstOrDefault();
 
@@ -44,9 +44,9 @@ namespace CalendarBot.Services.Parsers
 
                 var month = new Month(monthName, monthNumber);
 
-                monthList.Add(month);
+                calendar.Add(month);
 
-                var days = calendar.SelectNodes($"{calendar.XPath}//td");
+                var days = htmlCalendar.SelectNodes($"{htmlCalendar.XPath}//td");
 
                 foreach (var day in days)
                 {
@@ -84,14 +84,14 @@ namespace CalendarBot.Services.Parsers
 
             try
             {
-                _cache.Add($"Calendar:{year}", monthList);
+                _cache.Add($"Calendar:{year}", calendar);
             }
             catch (Exception e)
             {
                 _log.Error(e, $"Can't add calendar for {year}");
             }
 
-            return monthList;
+            return calendar;
         }
     }
 }
