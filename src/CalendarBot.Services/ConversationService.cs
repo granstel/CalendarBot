@@ -42,7 +42,7 @@ namespace CalendarBot.Services
                 }).Where(d => d.HasValue).OrderBy(d => d).ToList();
 
                 var year = dates.Select(d => d?.Year).FirstOrDefault();
-                var month = dates.Select(d => d?.Month).FirstOrDefault();
+                var month = dates.Select(d => d?.Month).FirstOrDefault().GetValueOrDefault();
 
                 if (year.HasValue)
                 {
@@ -51,6 +51,8 @@ namespace CalendarBot.Services
                     //TODO: if no data at cache, send notification to parse
 
                     var requestedDayTypes = dialog.Parameters?.Where(p => string.Equals(p.Key, "daytype")).SelectMany(p => p.Value.Split('/')).ToList();
+
+                    var daysForUserRequest = new Dictionary<DayType, ICollection<Day>>();
 
                     foreach(var requestedDayType in requestedDayTypes)
                     {
@@ -61,7 +63,12 @@ namespace CalendarBot.Services
                             continue;
                         }
 
-                        var days = calendar[month.GetValueOrDefault() - 1][dayType];
+                        var days = calendar[month - 1][dayType].ToList();
+
+                        if(days.Any() && !daysForUserRequest.ContainsKey(dayType))
+                        {
+                            daysForUserRequest.Add(dayType, days);
+                        }
                     }
 
                     
