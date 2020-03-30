@@ -92,6 +92,8 @@ namespace CalendarBot.Services.Parsers
                 }
 
                 var ranges = _rangeService.GetRanges(month);
+
+                month.Ranges = ranges;
             }
 
             try

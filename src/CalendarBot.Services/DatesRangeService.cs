@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace CalendarBot.Services
 {
@@ -17,6 +16,11 @@ namespace CalendarBot.Services
             foreach (var group in groups)
             {
                 var dayType = group.Key;
+
+                if (!result.ContainsKey(dayType))
+                {
+                    result.Add(dayType, new List<DatesRange>());
+                }
 
                 var groupDays = group.Value;
 
@@ -59,14 +63,21 @@ namespace CalendarBot.Services
                     }
                 }
 
-
-                if (!result.ContainsKey(dayType))
+                foreach (var range in ranges)
                 {
-                    result.Add(dayType, new List<DatesRange>());
+                    var minDateNumber = range.Min();
+                    var maxDateNumber = range.Max();
+
+                    var minDate = new DateTime(month.Year, month.Number, minDateNumber);
+                    var maxDate = new DateTime(month.Year, month.Number, maxDateNumber);
+
+                    var datesRange = new DatesRange(minDate, maxDate);
+
+                    result[dayType].Add(datesRange);
                 }
             }
 
-            return null;
+            return result;
         }
     }
 }

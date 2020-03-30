@@ -63,12 +63,12 @@ namespace CalendarBot.Services
                             continue;
                         }
 
-                        var days = calendar[month - 1][dayType].ToList();
+                        var ranges = calendar[month - 1][dayType].ToList();
 
-                        if(days.Any() && !daysForUserRequest.ContainsKey(dayType))
-                        {
-                            daysForUserRequest.Add(dayType, days);
-                        }
+                        //if(days.Any() && !daysForUserRequest.ContainsKey(dayType))
+                        //{
+                        //    daysForUserRequest.Add(dayType, days);
+                        //}
                     }
 
                     
