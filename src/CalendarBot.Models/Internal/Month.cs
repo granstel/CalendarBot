@@ -5,10 +5,11 @@ namespace CalendarBot.Models.Internal
 {
     public class Month
     {
-        public Month(string name, int number)
+        public Month(string name, int number, int year)
         {
             Name = name;
             Number = number;
+            Year = year;
 
             Days = new List<Day>();
         }
@@ -16,6 +17,8 @@ namespace CalendarBot.Models.Internal
         public string Name { get; }
 
         public int Number { get; }
+        
+        public int Year { get; }
 
         public ICollection<Day> Days { get; set; }
 

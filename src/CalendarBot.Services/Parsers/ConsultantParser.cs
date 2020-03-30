@@ -13,16 +13,18 @@ namespace CalendarBot.Services.Parsers
 
         private readonly IHtmlParser _htmlParser;
         private readonly IRedisCacheService _cache;
+        private readonly IDatesRangeService _rangeService;
         private readonly string _calendarSourceFormat;
 
-        public ConsultantParser(IHtmlParser htmlParser, IRedisCacheService cache, string calendarSourceFormat)
+        public ConsultantParser(IHtmlParser htmlParser, IRedisCacheService cache, IDatesRangeService rangeService, string calendarSourceFormat)
         {
             _htmlParser = htmlParser;
             _cache = cache;
+            _rangeService = rangeService;
             _calendarSourceFormat = calendarSourceFormat;
         }
 
-        public ICollection<Month> ParseCalendar(string year)
+        public ICollection<Month> ParseCalendar(int year)
         {
             var _url = string.Format(_calendarSourceFormat, year);
 
@@ -42,7 +44,7 @@ namespace CalendarBot.Services.Parsers
 
                 var monthNumber = i + 1;
 
-                var month = new Month(monthName, monthNumber);
+                var month = new Month(monthName, monthNumber, year);
 
                 calendar.Add(month);
 
@@ -73,13 +75,23 @@ namespace CalendarBot.Services.Parsers
                         continue;
                     }
 
-                    if (day.Attributes.Any(a => a.Name == "class" && a.Value.Contains("weekend")))
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value.Contains("holiday weekend")))
                     {
                         monthDay.Type = DayType.NotWork;
 
                         continue;
                     }
+
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value.Contains("weekend")))
+                    {
+                        monthDay.Type = DayType.Weekend;
+
+                        continue;
+                    }
+
                 }
+
+                var ranges = _rangeService.GetRanges(month);
             }
 
             try

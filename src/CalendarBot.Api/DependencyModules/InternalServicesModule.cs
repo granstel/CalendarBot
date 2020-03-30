@@ -16,6 +16,7 @@ namespace CalendarBot.Api.DependencyModules
             builder.RegisterType<DialogflowService>().As<IDialogflowService>();
             builder.RegisterType<CustomJsonSerializer>().AsSelf();
             builder.RegisterType<HtmlParser>().As<IHtmlParser>();
+            builder.RegisterType<DatesRangeService>().As<IDatesRangeService>();
             builder.Register(RegisterConsultantParser).As<IConsultantParser>();
 
             builder.Register(RegisterCacheService).As<IRedisCacheService>().SingleInstance();
@@ -36,9 +37,10 @@ namespace CalendarBot.Api.DependencyModules
         {
             var htmlParser = context.Resolve<IHtmlParser>();
             var cache = context.Resolve<IRedisCacheService>();
+            var rangeService = context.Resolve<IDatesRangeService>();
             var configuration = context.Resolve<AppConfiguration>();
 
-            var parser = new ConsultantParser(htmlParser, cache, configuration.CalendarSourceFormat);
+            var parser = new ConsultantParser(htmlParser, cache, rangeService, configuration.CalendarSourceFormat);
 
             return parser;
         }

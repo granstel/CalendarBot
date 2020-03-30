@@ -1,8 +1,7 @@
-﻿using System;
-using System.Threading.Tasks;
-using CalendarBot.Services;
+﻿using CalendarBot.Services;
 using Microsoft.AspNetCore.Mvc;
 using NLog;
+using System.ComponentModel.DataAnnotations;
 
 namespace CalendarBot.Api.Controllers
 {
@@ -22,7 +21,7 @@ namespace CalendarBot.Api.Controllers
         }
 
         [HttpPost("Parse/{year}")]
-        public IActionResult ParseCalendar(string year)
+        public IActionResult ParseCalendar([Required] int year)
         {
             var calendar = _consultantParser.ParseCalendar(year);
 

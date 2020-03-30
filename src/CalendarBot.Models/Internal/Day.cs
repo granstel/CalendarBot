@@ -10,5 +10,6 @@
         public int Number { get; set; }
 
         public DayType Type { get; set; }
+
     }
 }

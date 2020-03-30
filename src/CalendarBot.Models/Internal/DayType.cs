@@ -7,6 +7,11 @@
         //Short work day, usually before holidays
         PreHoliday,
 
-        NotWork
+        NotWork,
+
+        /// <summary>
+        /// Ordinary weekend, not holidays
+        /// </summary>
+        Weekend
     }
 }

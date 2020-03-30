@@ -3,8 +3,8 @@ using System.Collections.Generic;
 
 namespace CalendarBot.Services
 {
-    public interface IConsultantParser
+    public interface IDatesRangeService
     {
-        ICollection<Month> ParseCalendar(int year);
+        IDictionary<DayType, ICollection<DatesRange>> GetRanges(Month month);
     }
 }
