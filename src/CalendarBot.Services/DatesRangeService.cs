@@ -24,9 +24,17 @@ namespace CalendarBot.Services
 
                 var groupDays = group.Value;
 
-                var ranges = new List<int[]>();
+                var ranges = new List<List<int>>();
 
                 var currentRange = new List<int>();
+                ranges.Add(currentRange);
+
+                Action createNewCurrentRange = () =>
+                {
+                    currentRange = new List<int>();
+
+                    ranges.Add(currentRange);
+                };
 
                 for (var i = 0; i < groupDays.Count(); i++)
                 {
@@ -34,13 +42,21 @@ namespace CalendarBot.Services
 
                     var nextDayIndex = i + 1;
 
-                    if(nextDayIndex >= groupDays.Count())
+                    if (i > 0)
+                    {
+                        var previousDay = groupDays[i - 1];
+
+                        if (day - previousDay > 1)
+                        {
+                            createNewCurrentRange();
+                        }
+                    }
+
+                    if (nextDayIndex >= groupDays.Count())
                     {
                         currentRange.Add(day);
 
-                        ranges.Add(currentRange.ToArray());
-
-                        currentRange = new List<int>();
+                        //createNewCurrentRange();
 
                         continue;
                     }
@@ -57,14 +73,15 @@ namespace CalendarBot.Services
                     {
                         currentRange.Add(day);
 
-                        ranges.Add(currentRange.ToArray());
-
-                        currentRange = new List<int>();
+                        createNewCurrentRange();
                     }
                 }
 
                 foreach (var range in ranges)
                 {
+                    if (!range.Any())
+                        continue;
+
                     var minDateNumber = range.Min();
                     var maxDateNumber = range.Max();
 
