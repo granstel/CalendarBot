@@ -50,7 +50,50 @@
           "type": 0,
           "lang": "ru",
           "condition": "",
-          "speech": "В $date-period-original {0} рабочих и {1} выходных"
+          "speech": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 1.0,
+            "DayType": "Work",
+            "Answer": {
+              "RangeFormat": "Рабочие дни: {0}",
+              "EnumerationFormat": "с {0} по {1}"
+            }
+          }
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 2.0,
+            "DayType": "Work",
+            "Answer": {
+              "RangeFormat": "Рабочие: {0}",
+              "EnumerationFormat": "{0} - {1}"
+            }
+          }
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 3.0,
+            "DayType": "Work",
+            "Answer": {
+              "RangeFormat": "Работаем {0}",
+              "EnumerationFormat": "с {0} по {1}"
+            }
+          }
         }
       ],
       "defaultResponsePlatforms": {},
