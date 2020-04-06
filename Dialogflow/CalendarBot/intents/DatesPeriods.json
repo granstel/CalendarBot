@@ -43,6 +43,18 @@
           "noInputPromptMessages": [],
           "outputDialogContexts": [],
           "isList": false
+        },
+        {
+          "id": "58b85db5-43b3-4de9-a393-442bccb1e5eb",
+          "required": false,
+          "dataType": "",
+          "name": "payloadType",
+          "value": "AnswerTemplate",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
         }
       ],
       "messages": [
