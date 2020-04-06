@@ -74,11 +74,18 @@
           "condition": "",
           "payload": {
             "Id": 1.0,
-            "DayType": "Work",
-            "Answer": {
-              "RangeFormat": "Рабочие дни: {0}",
-              "EnumerationFormat": "с {0} по {1}"
-            }
+            "Answers": [
+              {
+                "DayType": "Work",
+                "RangeFormat": "Рабочие дни: {0}",
+                "EnumerationFormat": "с {0} по {1}"
+              },
+              {
+                "DayType": "NotWork",
+                "RangeFormat": "Выходные дни: {0}",
+                "EnumerationFormat": "с {0} по {1}"
+              }
+            ]
           }
         },
         {
@@ -87,11 +94,18 @@
           "condition": "",
           "payload": {
             "Id": 2.0,
-            "DayType": "Work",
-            "Answer": {
-              "RangeFormat": "Рабочие: {0}",
-              "EnumerationFormat": "{0} - {1}"
-            }
+            "Answers": [
+              {
+                "DayType": "Work",
+                "RangeFormat": "Рабочие: {0}",
+                "EnumerationFormat": "{0} - {1}"
+              },
+              {
+                "DayType": "NotWork",
+                "RangeFormat": "Выходные: {0}",
+                "EnumerationFormat": "с {0} по {1}"
+              }
+            ]
           }
         },
         {
@@ -100,11 +114,18 @@
           "condition": "",
           "payload": {
             "Id": 3.0,
-            "DayType": "Work",
-            "Answer": {
-              "RangeFormat": "Работаем {0}",
-              "EnumerationFormat": "с {0} по {1}"
-            }
+            "Answers": [
+              {
+                "DayType": "Work",
+                "RangeFormat": "Работаем {0}",
+                "EnumerationFormat": "с {0} по {1}"
+              },
+              {
+                "DayType": "NotWork",
+                "RangeFormat": "Праздники {0}",
+                "EnumerationFormat": "с {0} по {1}"
+              }
+            ]
           }
         }
       ],
