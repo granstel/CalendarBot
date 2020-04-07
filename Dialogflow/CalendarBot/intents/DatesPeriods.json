@@ -77,13 +77,15 @@
             "Answers": [
               {
                 "DayType": "Work",
-                "RangeFormat": "Рабочие дни: {0}",
-                "EnumerationFormat": "с {0} по {1}"
+                "MainFormat": "Рабочие дни: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationDelimiter": ", "
               },
               {
                 "DayType": "NotWork",
-                "RangeFormat": "Выходные дни: {0}",
-                "EnumerationFormat": "с {0} по {1}"
+                "MainFormat": "Выходные дни: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationDelimiter": ", "
               }
             ]
           }
@@ -97,13 +99,15 @@
             "Answers": [
               {
                 "DayType": "Work",
-                "RangeFormat": "Рабочие: {0}",
-                "EnumerationFormat": "{0} - {1}"
+                "MainFormat": "Рабочие: {0}",
+                "RangeFormat": "{0} - {1}",
+                "EnumerationDelimiter": "; "
               },
               {
                 "DayType": "NotWork",
-                "RangeFormat": "Выходные: {0}",
-                "EnumerationFormat": "с {0} по {1}"
+                "MainFormat": "Выходные: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationDelimiter": "; "
               }
             ]
           }
@@ -117,13 +121,15 @@
             "Answers": [
               {
                 "DayType": "Work",
-                "RangeFormat": "Работаем {0}",
-                "EnumerationFormat": "с {0} по {1}"
+                "MainFormat": "Работаем {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationDelimiter": ", "
               },
               {
                 "DayType": "NotWork",
-                "RangeFormat": "Праздники {0}",
-                "EnumerationFormat": "с {0} по {1}"
+                "MainFormat": "Праздники {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationDelimiter": ", "
               }
             ]
           }
