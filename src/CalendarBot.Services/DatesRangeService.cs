@@ -29,12 +29,12 @@ namespace CalendarBot.Services
                 var currentRange = new List<int>();
                 ranges.Add(currentRange);
 
-                Action createNewCurrentRange = () =>
+                void createNewCurrentRange()
                 {
                     currentRange = new List<int>();
 
                     ranges.Add(currentRange);
-                };
+                }
 
                 for (var i = 0; i < groupDays.Count(); i++)
                 {
