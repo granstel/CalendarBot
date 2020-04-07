@@ -25,9 +25,12 @@ namespace CalendarBot.Api.DependencyModules
 
             var credential = GoogleCredential.FromFile(configuration.JsonPath).CreateScoped(SessionsClient.DefaultScopes);
 
-            var channel = new Grpc.Core.Channel(SessionsClient.DefaultEndpoint.ToString(), credential.ToChannelCredentials());
+            var clientBuilder = new SessionsClientBuilder
+            {
+                ChannelCredentials = credential.ToChannelCredentials()
+            };
 
-            var client = SessionsClient.Create(channel);
+            var client = clientBuilder.Build();
 
             return client;
         }

@@ -63,7 +63,7 @@ namespace CalendarBot.Services
 
         private DetectIntentRequest CreateQuery(Request request)
         {
-            var session = new SessionName(_configuration.ProjectId, request.SessionId);
+            var session = new SessionName(_configuration.ProjectId, "us", request.SessionId);
 
             var eventInput = ResolveEvent(request);
 
