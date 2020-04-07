@@ -79,13 +79,21 @@
                 "DayType": "Work",
                 "MainFormat": "Рабочие дни: {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationDelimiter": ", "
+                "EnumerationSeparator": ", "
               },
               {
                 "DayType": "NotWork",
-                "MainFormat": "Выходные дни: {0}",
+                "MainFormat": "Праздничные дни: {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationDelimiter": ", "
+                "EnumerationSeparator": ", ",
+                "EmptyRangePhrase": "не нашлись("
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "Короткие дни: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationSeparator": ", ",
+                "EmptyRangePhrase": "не нашлись("
               }
             ]
           }
@@ -101,13 +109,21 @@
                 "DayType": "Work",
                 "MainFormat": "Рабочие: {0}",
                 "RangeFormat": "{0} - {1}",
-                "EnumerationDelimiter": "; "
+                "EnumerationSeparator": "; "
               },
               {
                 "DayType": "NotWork",
-                "MainFormat": "Выходные: {0}",
+                "MainFormat": "Праздники: {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationDelimiter": "; "
+                "EnumerationSeparator": "; ",
+                "EmptyRangePhrase": "не нашлись("
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "Короткие дни: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationSeparator": ", ",
+                "EmptyRangePhrase": "не нашлись("
               }
             ]
           }
@@ -123,13 +139,21 @@
                 "DayType": "Work",
                 "MainFormat": "Работаем {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationDelimiter": ", "
+                "EnumerationSeparator": ", "
               },
               {
                 "DayType": "NotWork",
                 "MainFormat": "Праздники {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationDelimiter": ", "
+                "EnumerationSeparator": ", ",
+                "EmptyRangePhrase": "не нашлись..."
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "Короткие дни: {0}",
+                "RangeFormat": "с {0} по {1}",
+                "EnumerationSeparator": ", ",
+                "EmptyRangePhrase": "не нашлись..."
               }
             ]
           }

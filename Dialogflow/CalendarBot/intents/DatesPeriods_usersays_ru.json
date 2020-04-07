@@ -1,5 +1,249 @@
 [
   {
+    "id": "b11d73a6-aeb2-48cc-ab5a-7b8f27489ff2",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "aa44c398-0ff3-43f6-8325-7c80e58f1f9f",
+    "data": [
+      {
+        "text": "когда уже ",
+        "userDefined": false
+      },
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "04f6f9c1-cdca-467c-9e7d-5bae206fcc64",
+    "data": [
+      {
+        "text": "что там в ",
+        "userDefined": false
+      },
+      {
+        "text": "сентябре",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 5,
+    "updated": 0
+  },
+  {
+    "id": "b4220abf-ea49-4ad1-b218-afad90760777",
+    "data": [
+      {
+        "text": "в ",
+        "userDefined": false
+      },
+      {
+        "text": "декабре",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      },
+      {
+        "text": " будут ",
+        "userDefined": false
+      },
+      {
+        "text": "короткие дни",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "89a249ed-8653-4582-9fe1-24486dade14a",
+    "data": [
+      {
+        "text": "а в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае 21го года",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      },
+      {
+        "text": " когда ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ffb7d183-58c1-47db-b579-9e5a7ddc4381",
+    "data": [
+      {
+        "text": "а в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      },
+      {
+        "text": " есть ",
+        "userDefined": false
+      },
+      {
+        "text": "короткие дни",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "adb329e5-4744-4a5a-8fba-ebb60b657362",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "в июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c1082e09-8275-4bcc-ba58-3a4848b12f21",
+    "data": [
+      {
+        "text": "рабочий",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " и ",
+        "userDefined": false
+      },
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "aff1c9d9-6a0c-4f8b-b3f5-e11b20062974",
+    "data": [
+      {
+        "text": "рабочий",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " и ",
+        "userDefined": false
+      },
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "апреле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
     "id": "f50bf0b1-2242-4571-bd2e-2857ef94927e",
     "data": [
       {
@@ -67,40 +311,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "143e851d-434a-4298-a7b2-a82bf32c9a93",
-    "data": [
-      {
-        "text": "рабочий",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " и ",
-        "userDefined": false
-      },
-      {
-        "text": "выходной",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "апреле",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -249,30 +459,6 @@
         "alias": "date-period",
         "meta": "@sys.date-period",
         "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "4de5998a-7596-4d7e-a790-e9d252f753b5",
-    "data": [
-      {
-        "text": "выходные",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": true
       }
     ],
     "isTemplate": false,
