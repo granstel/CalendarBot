@@ -6,7 +6,7 @@ namespace CalendarBot.Models.Internal
     {
         public IDictionary<string, string> Parameters { get; set; }
         
-        public ICollection<string> Payloads { get; set; }
+        public ICollection<Payload> Payloads { get; set; }
 
         public bool EndConversation { get; set; }
 
