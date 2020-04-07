@@ -8,6 +8,8 @@
 
         public string RangeFormat { get; set; }
 
-        public string EnumerationDelimiter { get; set; }
+        public string EnumerationSeparator { get; set; }
+        
+        public string EmptyRangePhrase { get; set; }
     }
 }

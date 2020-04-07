@@ -48,7 +48,7 @@ namespace CalendarBot.Services
                 year = DateTime.Now.Year;
                 month = DateTime.Now.Month;
             }
-            _cache.TryGet($"Calendar:{year}", out Month[] calendar);
+            _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
 
             //TODO: if no data at cache, send notification to parse
 
@@ -59,6 +59,8 @@ namespace CalendarBot.Services
             var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
 
             var stringBuilder = new StringBuilder();
+
+            var dayTypes = new List<DayType>();
 
             foreach (var requestedDayType in requestedDayTypes)
             {
@@ -72,13 +74,24 @@ namespace CalendarBot.Services
                 if (dayType == DayType.Work)
                     continue;
 
+                dayTypes.Add(dayType);
+            }
+
+            if(!dayTypes.Any())
+            {
+                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
+            }
+
+            foreach(var dayType in dayTypes)
+            {
                 var template = templates[dayType];
 
                 var ranges = calendar[month.Value - 1][dayType].ToList();
 
                 var rangesString = FormatRanges(ranges, template);
 
-                var joinedRanges = string.Join(template?.EnumerationDelimiter, rangesString);
+                var joinedRanges = string.Join(template?.EnumerationSeparator, rangesString);
+
                 stringBuilder.Append(string.Format(template?.MainFormat ?? "{0}", joinedRanges));
                 stringBuilder.AppendLine();
             }
@@ -97,6 +110,9 @@ namespace CalendarBot.Services
                 var startDay = range.StartDate.Day;
                 var endDay = range.EndDate.Day;
 
+                if (range.EndDate < DateTime.Now)
+                    continue;
+
                 if (startDay == endDay)
                 {
                     result.Add($"{startDay}го");
@@ -105,6 +121,11 @@ namespace CalendarBot.Services
                 {
                     result.Add(string.Format(template?.RangeFormat, $"{startDay}го", $"{endDay}е"));
                 }
+            }
+
+            if (!result.Any())
+            {
+                return new[] { template.EmptyRangePhrase };
             }
 
             return result;
