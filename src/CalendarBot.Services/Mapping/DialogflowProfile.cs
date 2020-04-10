@@ -20,6 +20,7 @@ namespace CalendarBot.Services.Mapping
                 .ForMember(d => d.Response, m => m.MapFrom(s => s.FulfillmentText))
                 .ForMember(d => d.ParametersIncomplete, m => m.MapFrom(s => !s.AllRequiredParamsPresent))
                 .ForMember(d => d.Action, m => m.MapFrom(s => s.Action))
+                .ForMember(d => d.IntentName, m => m.MapFrom(s => s.Intent.DisplayName))
                 .ForMember(d => d.EndConversation, m => m.Ignore())
                 .AfterMap((s, d) =>
                 {

@@ -29,6 +29,25 @@ namespace CalendarBot.Services
         {
             var dialog = await _dialogflowService.GetResponseAsync(request);
 
+            Response response;
+            switch (dialog.IntentName)
+            {
+                case "DatesPeriods":
+                    response = GetDatesPeriodsReponse(dialog);
+                    break;
+                case "Dates":
+                    response = GetDatesReponse(dialog);
+                    break;
+                default:
+                    response = new Response { Text = dialog.Response };
+                    break;
+            }
+
+            return response;
+        }
+
+        private Response GetDatesPeriodsReponse(Dialog dialog)
+        {
             var datePeriodsString = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date-period")).Select(p => p.Value).FirstOrDefault();
 
             var periodsStrings = datePeriodsString?.Split('/');
@@ -41,7 +60,7 @@ namespace CalendarBot.Services
             }).Where(d => d.HasValue).OrderBy(d => d).ToList();
 
             var year = dates?.Select(d => d?.Year).FirstOrDefault();
-            var month = dates?.Select(d => d?.Month).FirstOrDefault().GetValueOrDefault();
+            var month = dates?.Select(d => d?.Month).FirstOrDefault();
 
             if (!year.HasValue || !month.HasValue)
             {
@@ -77,12 +96,12 @@ namespace CalendarBot.Services
                 dayTypes.Add(dayType);
             }
 
-            if(!dayTypes.Any())
+            if (!dayTypes.Any())
             {
                 dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
             }
 
-            foreach(var dayType in dayTypes)
+            foreach (var dayType in dayTypes)
             {
                 var template = templates[dayType];
 
@@ -99,6 +118,29 @@ namespace CalendarBot.Services
             var response = new Response { Text = stringBuilder.ToString() };
 
             return response;
+        }
+        
+        private Response GetDatesReponse(Dialog dialog)
+        {
+            var date = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date")).Select(p => p.Value).Select(s =>
+            {
+                if (DateTime.TryParse(s, out var parsedDate))
+                    return parsedDate;
+                return default(DateTime?);
+            }).FirstOrDefault();
+
+            var year = date?.Year;
+            var month = date?.Month;
+
+            if (!year.HasValue || !month.HasValue)
+            {
+                year = DateTime.Now.Year;
+                month = DateTime.Now.Month;
+            }
+
+            _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
+
+            return null;
         }
 
         private ICollection<string> FormatRanges(List<DatesRange> ranges, Answer template)

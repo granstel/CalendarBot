@@ -15,5 +15,7 @@ namespace CalendarBot.Models.Internal
         public string Response { get; set; }
 
         public string Action { get; set; }
+        
+        public string IntentName { get; set; }
     }
 }
