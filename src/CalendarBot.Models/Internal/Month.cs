@@ -20,7 +20,7 @@ namespace CalendarBot.Models.Internal
 
         public int Year { get; }
 
-        public ICollection<Day> Days { get; set; }
+        public IList<Day> Days { get; set; }
 
         public IDictionary<DayType, ICollection<DatesRange>> Ranges { get; set; }
 

@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
 using CalendarBot.Models.Internal;
+using CalendarBot.Services.Extensions;
 using GranSteL.Helpers.Redis;
 using NLog;
 
@@ -59,14 +60,9 @@ namespace CalendarBot.Services
                 return default(DateTime?);
             }).Where(d => d.HasValue).OrderBy(d => d).ToList();
 
-            var year = dates?.Select(d => d?.Year).FirstOrDefault();
-            var month = dates?.Select(d => d?.Month).FirstOrDefault();
+            var year = dates?.Select(d => d?.Year).FirstOrDefault() ?? DateTime.Now.Year;
+            var month = dates?.Select(d => d?.Month).FirstOrDefault() ?? DateTime.Now.Month;
 
-            if (!year.HasValue || !month.HasValue)
-            {
-                year = DateTime.Now.Year;
-                month = DateTime.Now.Month;
-            }
             _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
 
             //TODO: if no data at cache, send notification to parse
@@ -105,7 +101,7 @@ namespace CalendarBot.Services
             {
                 var template = templates[dayType];
 
-                var ranges = calendar[month.Value - 1][dayType].ToList();
+                var ranges = calendar[month - 1][dayType].ToList();
 
                 var rangesString = FormatRanges(ranges, template);
 
@@ -122,25 +118,24 @@ namespace CalendarBot.Services
         
         private Response GetDatesReponse(Dialog dialog)
         {
-            var date = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date")).Select(p => p.Value).Select(s =>
+            var requestedDate = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date")).Select(p => p.Value).Select(s =>
             {
                 if (DateTime.TryParse(s, out var parsedDate))
                     return parsedDate;
                 return default(DateTime?);
-            }).FirstOrDefault();
+            }).FirstOrDefault() ?? DateTime.Now;
 
-            var year = date?.Year;
-            var month = date?.Month;
-
-            if (!year.HasValue || !month.HasValue)
-            {
-                year = DateTime.Now.Year;
-                month = DateTime.Now.Month;
-            }
+            var year = requestedDate.Year;
+            var month = requestedDate.Month;
+            var day = requestedDate.Day;
 
             _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
 
-            return null;
+            var dayType = calendar[month - 1].Days[day - 1].Type;
+
+            var info = requestedDate.ToRussianString($"dd MMMM: dddd, {dayType}");
+
+            return new Response { Text = info };
         }
 
         private ICollection<string> FormatRanges(List<DatesRange> ranges, Answer template)
