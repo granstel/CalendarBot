@@ -69,8 +69,6 @@ namespace CalendarBot.Services
 
             var requestedDayTypes = dialog.Parameters?.Where(p => string.Equals(p.Key, "daytype")).SelectMany(p => p.Value.Split('/')).ToList();
 
-            var daysForUserRequest = new Dictionary<DayType, ICollection<Day>>();
-
             var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
 
             var stringBuilder = new StringBuilder();
@@ -115,7 +113,7 @@ namespace CalendarBot.Services
 
             return response;
         }
-        
+
         private Response GetDatesReponse(Dialog dialog)
         {
             var requestedDate = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date")).Select(p => p.Value).Select(s =>
@@ -133,7 +131,22 @@ namespace CalendarBot.Services
 
             var dayType = calendar[month - 1].Days[day - 1].Type;
 
-            var info = requestedDate.ToRussianString($"dd MMMM: dddd, {dayType}");
+            var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
+
+            var template = templates[dayType];
+
+            var mainFormat = template?.MainFormat ?? $"dd MMMM{0}: dddd, это {dayType}... Простите, я немного не в себе...";
+
+            var yearFormat = string.Empty;
+
+            if (year != DateTime.Now.Year)
+            {
+                yearFormat = $" {year}го года";
+            }
+
+            var responseFormat = string.Format(mainFormat, yearFormat);
+
+            var info = requestedDate.ToRussianString(responseFormat);
 
             return new Response { Text = info };
         }
@@ -156,7 +169,7 @@ namespace CalendarBot.Services
                 }
                 else
                 {
-                    result.Add(string.Format(template?.RangeFormat, $"{startDay}го", $"{endDay}е"));
+                    result.Add(string.Format(template?.RangeFormat ?? "с {0} по {1}", $"{startDay}го", $"{endDay}е"));
                 }
             }
 
