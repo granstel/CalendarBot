@@ -1,5 +1,37 @@
 [
   {
+    "id": "790422d4-f734-4d06-95f9-a8956cfd7208",
+    "data": [
+      {
+        "text": "29 апреля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "030b712b-5eab-49fe-abc3-cfdee75f3ad7",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "через две недели",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "d0fd5523-8663-46cd-a5b9-14f07eab6a8c",
     "data": [
       {

@@ -9,11 +9,23 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "84f30dfb-47b9-4e31-8d19-adcc1e5c89bd",
+          "id": "d8367683-3bca-4658-aebe-8bb656426bf3",
           "required": false,
           "dataType": "@sys.date",
           "name": "date",
           "value": "$date",
+          "promptMessages": [],
+          "noMatchPromptMessages": [],
+          "noInputPromptMessages": [],
+          "outputDialogContexts": [],
+          "isList": false
+        },
+        {
+          "id": "3d7ce6ee-bac5-4707-8a4e-4e5134e0198f",
+          "required": false,
+          "dataType": "",
+          "name": "payloadType",
+          "value": "AnswerTemplate",
           "promptMessages": [],
           "noMatchPromptMessages": [],
           "noInputPromptMessages": [],
@@ -26,7 +38,89 @@
           "type": 0,
           "lang": "ru",
           "condition": "",
-          "speech": []
+          "speech": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 1.0,
+            "Answers": [
+              {
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0}: dddd, рабочий день"
+              },
+              {
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd... Это же праздничный день!"
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "d MMMM{0}: dddd, предпраздничный день"
+              },
+              {
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, обычный выходной"
+              }
+            ]
+          }
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 2.0,
+            "Answers": [
+              {
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0} - это dddd, рабочий день"
+              },
+              {
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd, да это же праздничный день!"
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "d MMMM{0} - это dddd короткий день!"
+              },
+              {
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, выходной день"
+              }
+            ]
+          }
+        },
+        {
+          "type": 4,
+          "lang": "ru",
+          "condition": "",
+          "payload": {
+            "Id": 3.0,
+            "Answers": [
+              {
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0}: dddd, обычный рабочий день"
+              },
+              {
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd, праздник!"
+              },
+              {
+                "DayType": "PreHoliday",
+                "MainFormat": "d MMMM{0}: dddd, это короткий день!"
+              },
+              {
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, выходной"
+              }
+            ]
+          }
         }
       ],
       "defaultResponsePlatforms": {},
