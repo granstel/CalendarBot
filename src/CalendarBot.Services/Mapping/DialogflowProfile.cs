@@ -4,9 +4,7 @@ using AutoMapper;
 using Google.Cloud.Dialogflow.V2;
 using Google.Protobuf.WellKnownTypes;
 using CalendarBot.Models.Internal;
-using System;
 using GranSteL.Helpers.Redis.Extensions;
-using System.Reflection;
 
 namespace CalendarBot.Services.Mapping
 {

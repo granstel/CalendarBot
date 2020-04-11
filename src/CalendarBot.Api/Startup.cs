@@ -47,6 +47,8 @@ namespace CalendarBot.Api
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<ExceptionsMiddleware>();
+
             app.UseMvc();
         }
     }
