@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "1e9ae3c1-e7c3-4a08-a39b-208a59b7e916",
+          "id": "e74274b3-9841-4bcd-a4e8-c1f11ea31c32",
           "required": false,
           "dataType": "@DayType",
           "name": "daytype",
@@ -21,7 +21,7 @@
           "isList": true
         },
         {
-          "id": "6a18b443-45fc-47ff-a00f-e0365617eeb6",
+          "id": "0bea46bc-6826-48ae-a851-1952e62b27b9",
           "required": false,
           "dataType": "@sys.date-period",
           "name": "date-period",
@@ -33,7 +33,7 @@
           "isList": false
         },
         {
-          "id": "f67811ed-bbd5-48f2-8b7a-91353e76ab4b",
+          "id": "d120831d-0447-4856-be9e-fb9557bf4447",
           "required": false,
           "dataType": "",
           "name": "date-period-original",
@@ -45,7 +45,7 @@
           "isList": false
         },
         {
-          "id": "58b85db5-43b3-4de9-a393-442bccb1e5eb",
+          "id": "9de8987b-5ba9-48b2-a60a-9f736ed8f114",
           "required": false,
           "dataType": "",
           "name": "payloadType",
@@ -74,26 +74,27 @@
           "condition": "",
           "payload": {
             "Id": 1.0,
+            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
             "Answers": [
               {
+                "EnumerationSeparator": ", ",
                 "DayType": "Work",
-                "MainFormat": "Рабочие дни: {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationSeparator": ", "
+                "MainFormat": "Рабочие дни: {0}"
               },
               {
+                "EmptyRangePhrase": "не нашлись(",
+                "EnumerationSeparator": ", ",
                 "DayType": "NotWork",
-                "MainFormat": "Праздничные дни: {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationSeparator": ", ",
-                "EmptyRangePhrase": "не нашлись("
+                "MainFormat": "Праздничные дни: {0}"
               },
               {
-                "DayType": "PreHoliday",
                 "MainFormat": "Короткие дни: {0}",
-                "RangeFormat": "с {0} по {1}",
+                "EmptyRangePhrase": "не нашлись(",
                 "EnumerationSeparator": ", ",
-                "EmptyRangePhrase": "не нашлись("
+                "DayType": "PreHoliday",
+                "RangeFormat": "с {0} по {1}"
               }
             ]
           }
@@ -104,25 +105,26 @@
           "condition": "",
           "payload": {
             "Id": 2.0,
+            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ",
             "Answers": [
               {
+                "EnumerationSeparator": "; ",
                 "DayType": "Work",
-                "MainFormat": "Рабочие: {0}",
                 "RangeFormat": "{0} - {1}",
-                "EnumerationSeparator": "; "
+                "MainFormat": "Рабочие: {0}"
               },
               {
-                "DayType": "NotWork",
-                "MainFormat": "Праздники: {0}",
-                "RangeFormat": "с {0} по {1}",
                 "EnumerationSeparator": "; ",
+                "DayType": "NotWork",
+                "RangeFormat": "с {0} по {1}",
+                "MainFormat": "Праздники: {0}",
                 "EmptyRangePhrase": "не нашлись("
               },
               {
-                "DayType": "PreHoliday",
-                "MainFormat": "Короткие дни: {0}",
-                "RangeFormat": "с {0} по {1}",
                 "EnumerationSeparator": ", ",
+                "DayType": "PreHoliday",
+                "RangeFormat": "с {0} по {1}",
+                "MainFormat": "Короткие дни: {0}",
                 "EmptyRangePhrase": "не нашлись("
               }
             ]
@@ -133,29 +135,30 @@
           "lang": "ru",
           "condition": "",
           "payload": {
-            "Id": 3.0,
             "Answers": [
               {
+                "EnumerationSeparator": ", ",
                 "DayType": "Work",
-                "MainFormat": "Работаем {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationSeparator": ", "
+                "MainFormat": "Работаем {0}"
               },
               {
+                "EmptyRangePhrase": "не нашлись...",
+                "EnumerationSeparator": ", ",
                 "DayType": "NotWork",
-                "MainFormat": "Праздники {0}",
                 "RangeFormat": "с {0} по {1}",
-                "EnumerationSeparator": ", ",
-                "EmptyRangePhrase": "не нашлись..."
+                "MainFormat": "Праздники {0}"
               },
               {
-                "DayType": "PreHoliday",
-                "MainFormat": "Короткие дни: {0}",
-                "RangeFormat": "с {0} по {1}",
                 "EnumerationSeparator": ", ",
+                "DayType": "PreHoliday",
+                "RangeFormat": "с {0} по {1}",
+                "MainFormat": "Короткие дни: {0}",
                 "EmptyRangePhrase": "не нашлись..."
               }
-            ]
+            ],
+            "Id": 3.0,
+            "NoYearInfoAnswer": "Эмм, тут такое дело... Я пока ничего не знаю про {0} год. Попробуйте спросить меня чуть позже, наверняка смогу ответить"
           }
         }
       ],
