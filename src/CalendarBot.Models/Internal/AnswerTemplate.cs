@@ -15,5 +15,7 @@ namespace CalendarBot.Models.Internal
                 return Answers.Where(d => d.DayType == dayType).FirstOrDefault();
             }
         }
+
+        public string NoYearInfoAnswer { get; set; }
     }
 }

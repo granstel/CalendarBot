@@ -16,12 +16,14 @@ namespace CalendarBot.Services
         private readonly Logger _log = LogManager.GetLogger(nameof(ConversationService));
 
         private readonly IDialogflowService _dialogflowService;
+        private readonly IConsultantParser _consultantParser;
         private readonly IRedisCacheService _cache;
         private readonly IMapper _mapper;
 
-        public ConversationService(IDialogflowService dialogflowService, IRedisCacheService cache, IMapper mapper)
+        public ConversationService(IDialogflowService dialogflowService, IConsultantParser consultantParser, IRedisCacheService cache, IMapper mapper)
         {
             _dialogflowService = dialogflowService;
+            _consultantParser = consultantParser;
             _cache = cache;
             _mapper = mapper;
         }
@@ -51,25 +53,28 @@ namespace CalendarBot.Services
         {
             var datePeriodsString = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date-period")).Select(p => p.Value).FirstOrDefault();
 
-            var periodsStrings = datePeriodsString?.Split('/');
-
-            var dates = periodsStrings?.Select(s =>
+            var requestedDate = datePeriodsString?.Split('/').Select(s =>
             {
                 if (DateTime.TryParse(s, out var date))
                     return date;
                 return default(DateTime?);
-            }).Where(d => d.HasValue).OrderBy(d => d).ToList();
+            }).FirstOrDefault() ?? DateTime.Now;
 
-            var year = dates?.Select(d => d?.Year).FirstOrDefault() ?? DateTime.Now.Year;
-            var month = dates?.Select(d => d?.Month).FirstOrDefault() ?? DateTime.Now.Month;
-
-            _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
-
-            //TODO: if no data at cache, send notification to parse
-
-            var requestedDayTypes = dialog.Parameters?.Where(p => string.Equals(p.Key, "daytype")).SelectMany(p => p.Value.Split('/')).ToList();
+            var year = requestedDate.Year;
+            var month = requestedDate.Month;
 
             var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
+            
+            if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
+            {
+                Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
+
+                var answer = string.Format(templates.NoYearInfoAnswer, year);
+
+                return new Response { Text = answer };
+            }
+
+            var requestedDayTypes = dialog.Parameters?.Where(p => string.Equals(p.Key, "daytype")).SelectMany(p => p.Value.Split('/')).ToList();         
 
             var stringBuilder = new StringBuilder();
 
@@ -109,9 +114,7 @@ namespace CalendarBot.Services
                 stringBuilder.AppendLine();
             }
 
-            var response = new Response { Text = stringBuilder.ToString() };
-
-            return response;
+            return new Response { Text = stringBuilder.ToString() };
         }
 
         private Response GetDatesReponse(Dialog dialog)
