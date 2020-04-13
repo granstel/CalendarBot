@@ -115,7 +115,7 @@ namespace CalendarBot.Services
 
             var template = templates[dayType];
 
-            var mainFormat = template?.MainFormat ?? $"dd MMMM{0}: dddd, это {dayType}... Простите, я немного не в себе...";
+            var mainFormat = template?.MainFormat ?? $"d MMMM{0}: dddd, это {dayType}... Простите, я немного не в себе...";
 
             var yearFormat = string.Empty;
 

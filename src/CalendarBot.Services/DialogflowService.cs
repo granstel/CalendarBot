@@ -48,11 +48,13 @@ namespace CalendarBot.Services
         {
             var intentRequest = CreateQuery(request);
 
-            _log.Trace($"Request:{Environment.NewLine}{intentRequest.Serialize()}");
+            if(_configuration.LogQuery)
+                _log.Trace($"Request:{Environment.NewLine}{intentRequest.Serialize()}");
 
             var intentResponse = await _dialogflowClient.DetectIntentAsync(intentRequest);
 
-            _log.Trace($"Response:{Environment.NewLine}{intentResponse.Serialize()}");
+            if(_configuration.LogQuery)
+                _log.Trace($"Response:{Environment.NewLine}{intentResponse.Serialize()}");
 
             var queryResult = intentResponse.QueryResult;
 
