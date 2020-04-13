@@ -198,7 +198,7 @@ namespace CalendarBot.Api.Middleware
             _log.SetProperty("StatusCode", null);
             _log.SetProperty("User", null);
 
-            if(clearRequestId)
+            if (clearRequestId)
             {
                 _log.SetProperty("RequestId", null);
             }
