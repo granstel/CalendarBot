@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using CalendarBot.Models.Internal;
+using CalendarBot.Services.Extensions;
 using GranSteL.Helpers.Redis;
 using NLog;
 
@@ -57,7 +58,7 @@ namespace CalendarBot.Services.Parsers
 
                 foreach (var day in days)
                 {
-                    if (!int.TryParse(day.InnerText, out var number))
+                    if (!int.TryParse(day.InnerText.Sanitize(), out var number))
                     {
                         _log.Warn($"Can't parse {day.InnerText} from {day.XPath}, {nameof(monthName)}={monthName}");
 
