@@ -9,7 +9,7 @@ namespace CalendarBot.Services
     {
         public IDictionary<DayType, ICollection<DatesRange>> GetRanges(Month month)
         {
-            var groups = month.Days.OrderBy(d => d.Number).GroupBy(d => d.Type).ToDictionary(d => d.Key, d => d.Select(g => g.Number).ToList());
+            var groups = month.Days.Where(d => d.Number > 0).OrderBy(d => d.Number).GroupBy(d => d.Type).ToDictionary(d => d.Key, d => d.Select(g => g.Number).ToList());
 
             var result = new Dictionary<DayType, ICollection<DatesRange>>();
 

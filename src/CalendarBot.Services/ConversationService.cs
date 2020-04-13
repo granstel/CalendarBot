@@ -53,12 +53,7 @@ namespace CalendarBot.Services
         {
             var datePeriodsString = dialog?.GetParameters("date-period")?.FirstOrDefault();
 
-            var requestedDate = datePeriodsString?.Split('/').Select(s =>
-            {
-                if (DateTime.TryParse(s, out var date))
-                    return date;
-                return default(DateTime?);
-            }).FirstOrDefault() ?? DateTime.Now;
+            var requestedDate = (datePeriodsString?.Split('/').Select(s => s.GetDateOrDefault())).FirstOrDefault();
 
             var year = requestedDate.Year;
             var month = requestedDate.Month;
@@ -67,36 +62,14 @@ namespace CalendarBot.Services
             
             if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
             {
-                Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
+                RunPrasing(year);
 
                 var answer = string.Format(templates.NoYearInfoAnswer, year);
 
                 return new Response { Text = answer };
             }
 
-            var requestedDayTypes = dialog.GetParameters("daytype").SelectMany(p => p.Split('/')).ToList();         
-
-            var dayTypes = new List<DayType>();
-
-            foreach (var requestedDayType in requestedDayTypes)
-            {
-                if (!Enum.TryParse(requestedDayType, out DayType dayType))
-                {
-                    _log.Warn($"Can't parse \"{requestedDayType}\" to \"{nameof(DayType)}\" type");
-
-                    continue;
-                }
-
-                if (dayType == DayType.Work)
-                    continue;
-
-                dayTypes.Add(dayType);
-            }
-
-            if (!dayTypes.Any())
-            {
-                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
-            }
+            var dayTypes = GetDayTypes(dialog);
 
             var stringBuilder = new StringBuilder();
 
@@ -104,7 +77,7 @@ namespace CalendarBot.Services
             {
                 var template = templates[dayType];
 
-                var ranges = calendar[month - 1][dayType].ToList();
+                var ranges = calendar[month][dayType].ToList();
 
                 var rangesString = FormatRanges(ranges, template);
 
@@ -114,27 +87,31 @@ namespace CalendarBot.Services
                 stringBuilder.AppendLine();
             }
 
-            return new Response { Text = stringBuilder.ToString() };
+            var text = stringBuilder.ToString();
+
+            return new Response { Text = text };
         }
 
         private Response GetDatesReponse(Dialog dialog)
         {
-            var requestedDate = dialog?.GetParameters("date").Select(s =>
-            {
-                if (DateTime.TryParse(s, out var parsedDate))
-                    return parsedDate;
-                return default(DateTime?);
-            }).FirstOrDefault() ?? DateTime.Now;
+            var requestedDate = (dialog?.GetParameters("date").Select(s => s.GetDateOrDefault())).FirstOrDefault();
 
             var year = requestedDate.Year;
             var month = requestedDate.Month;
             var day = requestedDate.Day;
 
-            _cache.TryGet($"Calendar:{year}", out Month[] calendar, true);
-
-            var dayType = calendar[month - 1].Days[day - 1].Type;
-
             var templates = dialog?.GetPayloads<AnswerTemplate>(dialog.Response).FirstOrDefault();
+
+            if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
+            {
+                RunPrasing(year);
+
+                var answer = string.Format(templates.NoYearInfoAnswer, year);
+
+                return new Response { Text = answer };
+            }
+
+            var dayType = calendar[month].Days[day].Type;
 
             var template = templates[dayType];
 
@@ -182,6 +159,40 @@ namespace CalendarBot.Services
             }
 
             return result;
+        }
+
+        private ICollection<DayType> GetDayTypes(Dialog dialog)
+        {
+            var requestedDayTypes = dialog.GetParameters("daytype").SelectMany(p => p.Split('/')).ToList();
+
+            var dayTypes = new List<DayType>();
+
+            foreach (var requestedDayType in requestedDayTypes)
+            {
+                if (!Enum.TryParse(requestedDayType, out DayType dayType))
+                {
+                    _log.Warn($"Can't parse \"{requestedDayType}\" to \"{nameof(DayType)}\" type");
+
+                    continue;
+                }
+
+                if (dayType == DayType.Work)
+                    continue;
+
+                dayTypes.Add(dayType);
+            }
+
+            if (!dayTypes.Any())
+            {
+                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
+            }
+
+            return dayTypes;
+        }
+
+        private void RunPrasing(int year)
+        {
+            Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
         }
     }
 }

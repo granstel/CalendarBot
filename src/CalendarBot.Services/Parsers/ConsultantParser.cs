@@ -32,7 +32,10 @@ namespace CalendarBot.Services.Parsers
 
             var htmlCalendars = document.DocumentNode.SelectNodes("//*[@class=\"cal\"]");
 
-            var calendar = new List<Month>();
+            var calendar = new List<Month>
+            {
+                new Month("Нулябрь", 0, year)
+            };
 
             for (var i = 0; i < htmlCalendars.Count(); i++)
             {
@@ -45,6 +48,8 @@ namespace CalendarBot.Services.Parsers
                 var monthNumber = i + 1;
 
                 var month = new Month(monthName, monthNumber, year);
+
+                month.Days.Add(new Day(0));
 
                 calendar.Add(month);
 
@@ -88,7 +93,6 @@ namespace CalendarBot.Services.Parsers
 
                         continue;
                     }
-
                 }
 
                 var ranges = _rangeService.GetRanges(month);
