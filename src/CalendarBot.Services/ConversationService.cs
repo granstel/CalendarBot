@@ -51,7 +51,7 @@ namespace CalendarBot.Services
 
         private Response GetDatesPeriodsReponse(Dialog dialog)
         {
-            var datePeriodsString = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date-period")).Select(p => p.Value).FirstOrDefault();
+            var datePeriodsString = dialog?.GetParameters("date-period")?.FirstOrDefault();
 
             var requestedDate = datePeriodsString?.Split('/').Select(s =>
             {
@@ -63,7 +63,7 @@ namespace CalendarBot.Services
             var year = requestedDate.Year;
             var month = requestedDate.Month;
 
-            var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
+            var templates = dialog?.GetPayloads<AnswerTemplate>(dialog.Response)?.FirstOrDefault();
             
             if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
             {
@@ -74,9 +74,7 @@ namespace CalendarBot.Services
                 return new Response { Text = answer };
             }
 
-            var requestedDayTypes = dialog.Parameters?.Where(p => string.Equals(p.Key, "daytype")).SelectMany(p => p.Value.Split('/')).ToList();         
-
-            var stringBuilder = new StringBuilder();
+            var requestedDayTypes = dialog.GetParameters("daytype").SelectMany(p => p.Split('/')).ToList();         
 
             var dayTypes = new List<DayType>();
 
@@ -100,6 +98,8 @@ namespace CalendarBot.Services
                 dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
             }
 
+            var stringBuilder = new StringBuilder();
+
             foreach (var dayType in dayTypes)
             {
                 var template = templates[dayType];
@@ -119,7 +119,7 @@ namespace CalendarBot.Services
 
         private Response GetDatesReponse(Dialog dialog)
         {
-            var requestedDate = dialog?.Parameters?.Where(p => string.Equals(p.Key, "date")).Select(p => p.Value).Select(s =>
+            var requestedDate = dialog?.GetParameters("date").Select(s =>
             {
                 if (DateTime.TryParse(s, out var parsedDate))
                     return parsedDate;
@@ -134,7 +134,7 @@ namespace CalendarBot.Services
 
             var dayType = calendar[month - 1].Days[day - 1].Type;
 
-            var templates = dialog.Payloads.OfType<AnswerTemplate>().Where(t => string.Equals(t.Id, dialog.Response)).FirstOrDefault();
+            var templates = dialog?.GetPayloads<AnswerTemplate>(dialog.Response).FirstOrDefault();
 
             var template = templates[dayType];
 
