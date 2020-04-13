@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "d8367683-3bca-4658-aebe-8bb656426bf3",
+          "id": "23796119-b4dd-4dc6-82bd-ce23fcfb788f",
           "required": false,
           "dataType": "@sys.date",
           "name": "date",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "3d7ce6ee-bac5-4707-8a4e-4e5134e0198f",
+          "id": "fafe86e5-1a90-4362-aa33-71fdd64355e7",
           "required": false,
           "dataType": "",
           "name": "payloadType",
@@ -49,7 +49,8 @@
           "lang": "ru",
           "condition": "",
           "payload": {
-            "Id": 1.0,
+            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
+            "Key": 1.0,
             "Answers": [
               {
                 "DayType": "Work",
@@ -64,8 +65,8 @@
                 "MainFormat": "d MMMM{0}: dddd, предпраздничный день"
               },
               {
-                "DayType": "Weekend",
-                "MainFormat": "d MMMM{0}: dddd, обычный выходной"
+                "MainFormat": "d MMMM{0}: dddd, обычный выходной",
+                "DayType": "Weekend"
               }
             ]
           }
@@ -75,7 +76,6 @@
           "lang": "ru",
           "condition": "",
           "payload": {
-            "Id": 2.0,
             "Answers": [
               {
                 "DayType": "Work",
@@ -90,10 +90,12 @@
                 "MainFormat": "d MMMM{0} - это dddd короткий день!"
               },
               {
-                "DayType": "Weekend",
-                "MainFormat": "d MMMM{0}: dddd, выходной день"
+                "MainFormat": "d MMMM{0}: dddd, выходной день",
+                "DayType": "Weekend"
               }
-            ]
+            ],
+            "Key": 2.0,
+            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ"
           }
         },
         {
@@ -101,7 +103,8 @@
           "lang": "ru",
           "condition": "",
           "payload": {
-            "Id": 3.0,
+            "Key": 3.0,
+            "NoYearInfoAnswer": "Эмм, тут такое дело... Я пока ничего не знаю про {0} год. Попробуйте спросить меня чуть позже, наверняка смогу ответить",
             "Answers": [
               {
                 "DayType": "Work",

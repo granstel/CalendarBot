@@ -1,6 +1,24 @@
 [
   {
-    "id": "a8e6d83a-a590-4597-8c75-4aa2396ecc4e",
+    "id": "22d61bee-8e8b-44b8-9bfe-08536aede178",
+    "data": [
+      {
+        "text": "что там ",
+        "userDefined": false
+      },
+      {
+        "text": "с первого по пятнадцатое мая",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "78a85ce9-c9fe-4ecd-91ac-abe031d8dc60",
     "data": [
       {
         "text": "рабочий",
@@ -30,7 +48,53 @@
       }
     ],
     "isTemplate": false,
-    "count": 2,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "d4c26c1d-5a13-434a-8bb6-0da801ea9db0",
+    "data": [
+      {
+        "text": "май",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b76a378b-1de5-436b-9729-83c29c393d45",
+    "data": [
+      {
+        "text": "март 2019",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 5,
+    "updated": 0
+  },
+  {
+    "id": "05743652-36d0-4d26-bb24-660b6861ed4c",
+    "data": [
+      {
+        "text": "что та ",
+        "userDefined": false
+      },
+      {
+        "text": "с 1 по 15 мая",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
     "updated": 0
   },
   {
@@ -1617,20 +1681,6 @@
     ],
     "isTemplate": false,
     "count": 1,
-    "updated": 0
-  },
-  {
-    "id": "488a4187-814c-436d-beb5-d2e8487b099e",
-    "data": [
-      {
-        "text": "май",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
     "updated": 0
   },
   {
