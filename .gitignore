@@ -9,3 +9,6 @@
 **/.hg*
 **/.hg
 **/Keys/
+**/deploy/
+**/.config/
+**/Properties/
