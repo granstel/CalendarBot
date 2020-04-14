@@ -14,7 +14,7 @@ namespace CalendarBot.Services.Mapping
         {
             CreateMap<QueryResult, Dialog>()
                 .ForMember(d => d.Parameters, m => m.MapFrom(s => GetParameters(s)))
-                .ForMember(d => d.Payloads, m => m.MapFrom(s => GetPayloads(s)))
+                .ForMember(d => d.AnswerTemplates, m => m.MapFrom(s => ParseTemplates(s)))
                 .ForMember(d => d.Response, m => m.MapFrom(s => s.FulfillmentText))
                 .ForMember(d => d.ParametersIncomplete, m => m.MapFrom(s => !s.AllRequiredParamsPresent))
                 .ForMember(d => d.Action, m => m.MapFrom(s => s.Action))
@@ -81,29 +81,15 @@ namespace CalendarBot.Services.Mapping
             return dictionary;
         }
 
-        private ICollection<Payload> GetPayloads(QueryResult queryResult)
+        private ICollection<AnswerTemplate> ParseTemplates(QueryResult queryResult)
         {
-            var result = new List<Payload>();
+            var result = new List<AnswerTemplate>();
 
-            var payloadType = queryResult?.Parameters.Fields.Where(f => string.Equals("payloadType", f.Key)).Select(f => f.Value?.StringValue).FirstOrDefault();
+            var sourcePayloads = queryResult?.FulfillmentMessages?
+                            .Where(m => m.MessageCase == Intent.Types.Message.MessageOneofCase.Payload)
+                            .Select(m => m.Payload.ToString().Deserialize<AnswerTemplate>()).ToList();
 
-            if(string.IsNullOrEmpty(payloadType))
-            {
-                return result;
-            }
-
-            switch (payloadType)
-            {
-                case "AnswerTemplate":
-                    var sourcePayloads = queryResult?.FulfillmentMessages?
-                                    .Where(m => m.MessageCase == Intent.Types.Message.MessageOneofCase.Payload)
-                                    .Select(m => m.Payload.ToString().Deserialize<AnswerTemplate>()).ToList();
-
-                    result.AddRange(sourcePayloads);
-                    break;
-                default:
-                    break;
-            }
+            result.AddRange(sourcePayloads);
 
             return result;
         }

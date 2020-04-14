@@ -58,7 +58,7 @@ namespace CalendarBot.Services
             var year = requestedDate.Year;
             var month = requestedDate.Month;
 
-            var templates = dialog?.GetPayloads<AnswerTemplate>(dialog.Response)?.FirstOrDefault();
+            var templates = dialog?.GetTemplate(dialog.Response);
             
             if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
             {
@@ -100,7 +100,7 @@ namespace CalendarBot.Services
             var month = requestedDate.Month;
             var day = requestedDate.Day;
 
-            var templates = dialog?.GetPayloads<AnswerTemplate>(dialog.Response).FirstOrDefault();
+            var templates = dialog?.GetTemplate(dialog.Response);
 
             if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
             {
@@ -121,7 +121,7 @@ namespace CalendarBot.Services
 
             if (year != DateTime.Now.Year)
             {
-                yearFormat = $" {year}го года";
+                yearFormat = string.Format(templates.YearFormat, year);
             }
 
             var responseFormat = string.Format(mainFormat, yearFormat);

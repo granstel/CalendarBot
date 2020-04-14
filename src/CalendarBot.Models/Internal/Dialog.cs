@@ -7,7 +7,7 @@ namespace CalendarBot.Models.Internal
     {
         public IDictionary<string, string> Parameters { get; set; }
 
-        public ICollection<Payload> Payloads { get; set; }
+        public ICollection<AnswerTemplate> AnswerTemplates { get; set; }
 
         public bool EndConversation { get; set; }
 
@@ -24,9 +24,9 @@ namespace CalendarBot.Models.Internal
             return Parameters?.Where(p => string.Equals(p.Key, key)).Select(p => p.Value);
         }
 
-        public IEnumerable<T> GetPayloads<T>(string key) where T : Payload
+        public AnswerTemplate GetTemplate(string key)
         {
-            return Payloads?.OfType<T>().Where(t => string.Equals(t.Key, key));
+            return AnswerTemplates?.Where(t => string.Equals(t.Key, key)).FirstOrDefault();
         }
     }
 }
