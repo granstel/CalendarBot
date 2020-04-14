@@ -1,5 +1,91 @@
 [
   {
+    "id": "8a61a983-b310-47fa-be82-2dda9403e266",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "апрель следующего года",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8e4c34cd-e02f-4cb3-a58c-13e6dd2ca1ff",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "апрель 2021 года",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5c4a7538-37ea-4155-a41e-9fdcc507fb57",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "май",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a1eb6b27-1998-41cf-bf2a-4e6d62bafed9",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "апрель",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "558fccf5-f8f5-43cb-ba89-138139b76273",
+    "data": [
+      {
+        "text": "декабрь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "22d61bee-8e8b-44b8-9bfe-08536aede178",
     "data": [
       {
@@ -1271,20 +1357,6 @@
     ],
     "isTemplate": false,
     "count": 3,
-    "updated": 0
-  },
-  {
-    "id": "ebffb6e0-8413-4402-bb38-e16121ba05f2",
-    "data": [
-      {
-        "text": "декабрь",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
     "updated": 0
   },
   {

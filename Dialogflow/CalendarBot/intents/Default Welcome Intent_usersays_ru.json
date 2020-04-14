@@ -1,5 +1,22 @@
 [
   {
+    "id": "f6a53b2c-a15c-415b-887a-7104b007e861",
+    "data": [
+      {
+        "text": "чё",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": "-как",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "8b9f30a0-4ac5-41ff-9b7b-487381768759",
     "data": [
       {

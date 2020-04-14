@@ -1,5 +1,69 @@
 [
   {
+    "id": "a6267bcb-c6f0-49d3-87d6-52182516ff93",
+    "data": [
+      {
+        "text": "22 декабря",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "489b9cfd-cd34-4e80-92cc-144fb3d5c04c",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "через неделю",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "12745bfd-8101-4b0e-bdfc-82e9044c5cc1",
+    "data": [
+      {
+        "text": "а ",
+        "userDefined": false
+      },
+      {
+        "text": "через неделю",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "114a7038-f145-48eb-9ff5-855d3539294d",
+    "data": [
+      {
+        "text": "послезавтра",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "b857ceb7-d979-40d5-91e8-68336dd1d943",
     "data": [
       {
@@ -290,20 +354,6 @@
     "data": [
       {
         "text": "11 апреля",
-        "alias": "date",
-        "meta": "@sys.date",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "cda48c62-277f-4e8b-a47f-188564d350bd",
-    "data": [
-      {
-        "text": "послезавтра",
         "alias": "date",
         "meta": "@sys.date",
         "userDefined": false
