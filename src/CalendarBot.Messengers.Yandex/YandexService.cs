@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
-using CalendarBot.Messengers.Exceptions;
 using CalendarBot.Services;
+using NLog;
 using Yandex.Dialogs.Models;
 using Internal = CalendarBot.Models.Internal;
 
@@ -14,8 +14,9 @@ namespace CalendarBot.Messengers.Yandex
         private const string PongResponse = "pong";
         private const string ErrorCommand = "error";
 
-        private readonly IMapper _mapper;
+        private readonly Logger _log = LogManager.GetLogger(nameof(YandexService));
 
+        private readonly IMapper _mapper;
 
         public YandexService(IConversationService conversationService, IMapper mapper) : base(conversationService, mapper)
         {
@@ -26,13 +27,9 @@ namespace CalendarBot.Messengers.Yandex
         {
             if (input == default)
             {
-                input = new InputModel 
-                {
-                    Request = new Request
-                    {
-                        OriginalUtterance = ErrorCommand
-                    }
-                };
+                _log.Error("Input = null");
+
+                input = CreateErrorInput();
             }
 
             return base.Before(input);
@@ -57,11 +54,29 @@ namespace CalendarBot.Messengers.Yandex
 
         protected override async Task<OutputModel> AfterAsync(InputModel input, Internal.Response response)
         {
+            if (input == default)
+            {
+                input = CreateErrorInput();
+            }
+
             var output = await base.AfterAsync(input, response);
 
             _mapper.Map(input, output);
 
             return output;
+        }
+
+        private InputModel CreateErrorInput()
+        {
+            return new InputModel
+            {
+                Request = new Request
+                {
+                    OriginalUtterance = ErrorCommand
+                },
+                Session = new InputSession(),
+                Version = "1.0"
+            };
         }
     }
 }
