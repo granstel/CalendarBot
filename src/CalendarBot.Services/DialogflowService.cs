@@ -141,7 +141,7 @@ namespace CalendarBot.Services
             EventInput result;
 
             // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
-            if (request.NewSession == true || string.IsNullOrEmpty(request.Text))
+            if (request.NewSession == true && string.IsNullOrEmpty(request.Text))
             {
                 result = GetEvent(WelcomeEventName);
             }
