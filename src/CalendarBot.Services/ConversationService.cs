@@ -42,7 +42,7 @@ namespace CalendarBot.Services
                     response = GetDatesReponse(dialog);
                     break;
                 default:
-                    response = new Response { Text = dialog.Response };
+                    response = new Response { Text = dialog.Response, Finished = dialog.EndConversation };
                     break;
             }
 
