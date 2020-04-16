@@ -1,5 +1,41 @@
 [
   {
+    "id": "1604cd44-b8a4-4a5b-9392-c9f3e81d3997",
+    "data": [
+      {
+        "text": "откуда ты всё знаешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e68e50cd-1990-4f6e-a368-8fcaa3cbe314",
+    "data": [
+      {
+        "text": "откуда ты берёшь эту информацию?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e4633d0b-17f6-4b01-a116-dac47f73317b",
+    "data": [
+      {
+        "text": "откуда инфа",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "bd6c2093-a96a-466f-8a33-99cbede6a017",
     "data": [
       {

@@ -1,5 +1,209 @@
 [
   {
+    "id": "cd0956dc-3f48-45f2-9704-53de892bc80b",
+    "data": [
+      {
+        "text": "двадцать пятое мая две тысячи двадцать второго года",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "588a35ed-7736-44cd-a36e-5c2e1eb1f3ad",
+    "data": [
+      {
+        "text": "А ",
+        "userDefined": false
+      },
+      {
+        "text": "15 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 2,
+    "updated": 0
+  },
+  {
+    "id": "83751076-0905-4e5c-8014-7a201670a8e0",
+    "data": [
+      {
+        "text": "двадцать пять",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      },
+      {
+        "text": " это что что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c32c6d69-490d-44f7-8006-c63f70e51544",
+    "data": [
+      {
+        "text": "двадцать пятое",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a8a2ac93-5158-4f1d-b973-c6d1609eda12",
+    "data": [
+      {
+        "text": "подскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "пятнадцатое июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6dbf0c59-4599-48f6-abde-d2db334698c9",
+    "data": [
+      {
+        "text": "а ",
+        "userDefined": false
+      },
+      {
+        "text": "четырнадцатое июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8c08a338-2b04-4d48-8e25-e8ae4f4e0d90",
+    "data": [
+      {
+        "text": "двенадцатого ",
+        "userDefined": false
+      },
+      {
+        "text": "двенадцатого июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4cf2d7aa-c50b-4c6c-ad8f-8cf5b1f8faab",
+    "data": [
+      {
+        "text": "семнадцатое апреля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "990ad9fe-fc43-413e-9fbb-13511451f114",
+    "data": [
+      {
+        "text": "двадцать второе декабря",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c29baa66-92cf-400f-847b-c23b9ab6b216",
+    "data": [
+      {
+        "text": "четырнадцатое февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "776c7bfa-cf9f-49a6-a548-71da619fb3a9",
+    "data": [
+      {
+        "text": "7 марта",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "119f9197-022b-4138-9d55-0278e1a88415",
+    "data": [
+      {
+        "text": "это ",
+        "userDefined": false
+      },
+      {
+        "text": "сегодня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "a6267bcb-c6f0-49d3-87d6-52182516ff93",
     "data": [
       {
@@ -179,20 +383,6 @@
     ],
     "isTemplate": false,
     "count": 2,
-    "updated": 0
-  },
-  {
-    "id": "e09411ed-09be-4b52-b8ae-693539e38868",
-    "data": [
-      {
-        "text": "7 марта",
-        "alias": "date",
-        "meta": "@sys.date",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 3,
     "updated": 0
   },
   {
