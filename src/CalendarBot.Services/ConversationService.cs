@@ -91,6 +91,8 @@ namespace CalendarBot.Services
 
             var image = GetImage(requestedDate, templates?.ImageTitleFormat);
 
+            image.Description = text;
+
             return new Response { Text = text, Image = image };
         }
 
