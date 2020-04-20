@@ -1,4 +1,4 @@
-﻿using CalendarBot.Models.Internal;
+﻿using CalendarBot.Models;
 using System.Collections.Generic;
 
 namespace CalendarBot.Services

@@ -1,4 +1,4 @@
-namespace CalendarBot.Models.Internal
+namespace CalendarBot.Models
 {
     /// <summary>
     /// Источник запроса, мессенджер

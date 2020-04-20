@@ -3,8 +3,8 @@ using System.Linq;
 using AutoMapper;
 using Google.Cloud.Dialogflow.V2;
 using Google.Protobuf.WellKnownTypes;
-using CalendarBot.Models.Internal;
 using GranSteL.Helpers.Redis.Extensions;
+using CalendarBot.Models;
 
 namespace CalendarBot.Services.Mapping
 {

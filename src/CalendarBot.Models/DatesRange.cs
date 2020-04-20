@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace CalendarBot.Models.Internal
+namespace CalendarBot.Models
 {
     public class DatesRange
     {
@@ -11,7 +11,7 @@ namespace CalendarBot.Models.Internal
         }
 
         public DateTime StartDate { get; set; }
-        
+
         public DateTime EndDate { get; set; }
     }
 }

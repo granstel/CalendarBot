@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 using CalendarBot.Services.Extensions;
 using GranSteL.Helpers.Redis;
 using NLog;

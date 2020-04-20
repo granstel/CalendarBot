@@ -1,4 +1,4 @@
-﻿using CalendarBot.Models.Internal;
+﻿using CalendarBot.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -1,7 +1,7 @@
-﻿namespace CalendarBot.Models.Internal
+﻿namespace CalendarBot.Models
 {
     public enum DayType
-    {   
+    {
         Work,
 
         //Short work day, usually before holidays

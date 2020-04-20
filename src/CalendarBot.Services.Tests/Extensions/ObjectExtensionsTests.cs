@@ -1,8 +1,8 @@
-﻿using CalendarBot.Models.Internal;
-using CalendarBot.Services.Extensions;
+﻿using CalendarBot.Services.Extensions;
 using AutoFixture;
 using Newtonsoft.Json;
 using NUnit.Framework;
+using CalendarBot.Models;
 
 namespace CalendarBot.Services.Tests.Extensions
 {

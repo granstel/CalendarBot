@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 using AutoMapper;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 using CalendarBot.Services;
 
 namespace CalendarBot.Messengers

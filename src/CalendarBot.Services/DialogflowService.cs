@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
 using Google.Cloud.Dialogflow.V2;
-using CalendarBot.Models.Internal;
 using CalendarBot.Services.Configuration;
 using CalendarBot.Services.Extensions;
 using NLog;
+using CalendarBot.Models;
 
 namespace CalendarBot.Services
 {

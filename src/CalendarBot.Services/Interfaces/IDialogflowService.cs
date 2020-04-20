@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 
 namespace CalendarBot.Services
 {

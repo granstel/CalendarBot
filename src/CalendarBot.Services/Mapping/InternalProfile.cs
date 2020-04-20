@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 
 namespace CalendarBot.Services.Mapping
 {

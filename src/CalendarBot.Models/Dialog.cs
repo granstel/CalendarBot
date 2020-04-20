@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace CalendarBot.Models.Internal
+namespace CalendarBot.Models
 {
     public class Dialog
     {

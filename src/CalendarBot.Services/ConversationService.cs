@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutoMapper;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 using CalendarBot.Services.Extensions;
 using GranSteL.Helpers.Redis;
 using NLog;

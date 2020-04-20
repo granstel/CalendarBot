@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Threading.Tasks;
 using AutoMapper;
+using CalendarBot.Models;
 using CalendarBot.Services;
 using NLog;
-using Yandex.Dialogs.Models;
-using Internal = CalendarBot.Models.Internal;
+using YandexModels = Yandex.Dialogs.Models;
 
 namespace CalendarBot.Messengers.Yandex
 {
-    public class YandexService : MessengerService<InputModel, OutputModel>, IYandexService
+    public class YandexService : MessengerService<YandexModels.InputModel, YandexModels.OutputModel>, IYandexService
     {
         private const string PingCommand = "ping";
         private const string PongResponse = "pong";
@@ -23,7 +23,7 @@ namespace CalendarBot.Messengers.Yandex
             _mapper = mapper;
         }
 
-        protected override Internal.Request Before(InputModel input)
+        protected override Request Before(YandexModels.InputModel input)
         {
             if (input == default)
             {
@@ -35,24 +35,24 @@ namespace CalendarBot.Messengers.Yandex
             return base.Before(input);
         }
 
-        protected override Internal.Response ProcessCommand(Internal.Request request)
+        protected override Response ProcessCommand(Request request)
         {
-            Internal.Response response = null;
+            Response response = null;
 
             if (PingCommand.Equals(request?.Text, StringComparison.InvariantCultureIgnoreCase))
             {
-                response = new Internal.Response { Text = PongResponse };
+                response = new Response { Text = PongResponse };
             }
 
             if (ErrorCommand.Equals(request?.Text, StringComparison.InvariantCultureIgnoreCase))
             {
-                response = new Internal.Response { Text = "Простите, у меня какие-то проблемы..." };
+                response = new Response { Text = "Простите, у меня какие-то проблемы..." };
             }
 
             return response;
         }
 
-        protected override async Task<OutputModel> AfterAsync(InputModel input, Internal.Response response)
+        protected override async Task<YandexModels.OutputModel> AfterAsync(YandexModels.InputModel input, Response response)
         {
             if (input == default)
             {
@@ -66,15 +66,15 @@ namespace CalendarBot.Messengers.Yandex
             return output;
         }
 
-        private InputModel CreateErrorInput()
+        private YandexModels.InputModel CreateErrorInput()
         {
-            return new InputModel
+            return new YandexModels.InputModel
             {
-                Request = new Request
+                Request = new YandexModels.Request
                 {
                     OriginalUtterance = ErrorCommand
                 },
-                Session = new InputSession(),
+                Session = new YandexModels.InputSession(),
                 Version = "1.0"
             };
         }

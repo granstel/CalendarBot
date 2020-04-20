@@ -1,8 +1,7 @@
 using System;
 using AutoMapper;
-using CalendarBot.Models.Internal;
+using CalendarBot.Models;
 using Yandex.Dialogs.Models;
-using Internal = CalendarBot.Models.Internal;
 using YandexModels = Yandex.Dialogs.Models;
 
 namespace CalendarBot.Messengers.Yandex
@@ -14,7 +13,7 @@ namespace CalendarBot.Messengers.Yandex
     {
         public YandexProfile()
         {
-            CreateMap<InputModel, Internal.Request>()
+            CreateMap<InputModel, Models.Request>()
                 .ForMember(d => d.ChatHash, m => m.ResolveUsing(s => s.Session?.SkillId))
                 .ForMember(d => d.UserHash, m => m.ResolveUsing(s => s.Session?.UserId))
                 .ForMember(d => d.Text, m => m.ResolveUsing(s => s.Request?.OriginalUtterance))
@@ -23,19 +22,19 @@ namespace CalendarBot.Messengers.Yandex
                 .ForMember(d => d.Language, m => m.ResolveUsing(s => s.Meta?.Locale))
                 .ForMember(d => d.Source, m => m.UseValue(Source.Yandex));
 
-            CreateMap<Internal.Response, OutputModel>()
+            CreateMap<Models.Response, OutputModel>()
                 .ForMember(d => d.Response, m => m.MapFrom(s => s))
                 .ForMember(d => d.Session, m => m.MapFrom(s => s))
                 .ForMember(d => d.Version, m => m.Ignore())
                 .ForMember(d => d.StartAccountLinking, m => m.Ignore());
 
-            CreateMap<Internal.Response, YandexModels.Response>()
+            CreateMap<Models.Response, YandexModels.Response>()
                 .ForMember(d => d.Text, m => m.MapFrom(s => s.Text.Replace(Environment.NewLine, "\n")))
                 .ForMember(d => d.Tts, m => m.MapFrom(s => s.AlternativeText.Replace(Environment.NewLine, "\n")))
                 .ForMember(d => d.EndSession, m => m.MapFrom(s => s.Finished))
                 .ForMember(d => d.Buttons, m => m.Ignore());
 
-            CreateMap<Internal.Response, Session>()
+            CreateMap<Models.Response, Session>()
                 .ForMember(d => d.UserId, m => m.MapFrom(s => s.UserHash))
                 .ForMember(d => d.MessageId, m => m.Ignore())
                 .ForMember(d => d.SessionId, m => m.Ignore());

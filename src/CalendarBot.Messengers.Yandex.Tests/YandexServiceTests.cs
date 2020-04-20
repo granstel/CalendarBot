@@ -5,7 +5,6 @@ using CalendarBot.Services;
 using Moq;
 using NUnit.Framework;
 using Yandex.Dialogs.Models;
-using Internal = CalendarBot.Models.Internal;
 
 namespace CalendarBot.Messengers.Yandex.Tests
 {
@@ -41,22 +40,22 @@ namespace CalendarBot.Messengers.Yandex.Tests
                 .OmitAutoProperties()
                 .Create();
 
-            var request = _fixture.Build<Internal.Request>()
+            var request = _fixture.Build<Models.Request>()
                 .OmitAutoProperties()
                 .Create();
 
-            _mapper.Setup(m => m.Map<Internal.Request>(It.IsAny<InputModel>())).Returns(request);
+            _mapper.Setup(m => m.Map<Models.Request>(It.IsAny<InputModel>())).Returns(request);
 
             _conversationService.Setup(s => s.GetResponseAsync(request)).ReturnsAsync(() => null);
 
-            _mapper.Setup(m => m.Map(It.IsAny<Internal.Request>(), It.IsAny<Internal.Response>())).Returns(() => null);
+            _mapper.Setup(m => m.Map(It.IsAny<Models.Request>(), It.IsAny<Models.Response>())).Returns(() => null);
 
             var output = _fixture.Build<OutputModel>()
                 .With(o => o.Session)
                 .OmitAutoProperties()
                 .Create();
 
-            _mapper.Setup(m => m.Map<OutputModel>(It.IsAny<Internal.Response>())).Returns(output);
+            _mapper.Setup(m => m.Map<OutputModel>(It.IsAny<Models.Response>())).Returns(output);
             _mapper.Setup(m => m.Map(It.IsAny<InputModel>(), It.IsAny<OutputModel>())).Returns(() => null);
 
 

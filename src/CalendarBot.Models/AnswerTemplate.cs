@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 
-namespace CalendarBot.Models.Internal
+namespace CalendarBot.Models
 {
     public class AnswerTemplate
     {

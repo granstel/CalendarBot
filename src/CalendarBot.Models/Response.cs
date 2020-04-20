@@ -1,8 +1,8 @@
-namespace CalendarBot.Models.Internal
+namespace CalendarBot.Models
 {
     public class Response
     {
-        public string ChatHash {get; set;}
+        public string ChatHash { get; set; }
 
         public string UserHash { get; set; }
 
