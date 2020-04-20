@@ -144,9 +144,6 @@ namespace CalendarBot.Services
                 var startDay = range.StartDate.Day;
                 var endDay = range.EndDate.Day;
 
-                if (range.EndDate < DateTime.Now)
-                    continue;
-
                 if (startDay == endDay)
                 {
                     result.Add($"{startDay}го");
