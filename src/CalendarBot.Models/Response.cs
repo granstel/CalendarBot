@@ -11,5 +11,7 @@ namespace CalendarBot.Models
         public string AlternativeText { get; set; }
 
         public bool Finished { get; set; }
+
+        public Image Image { get; set; }
     }
 }

@@ -59,7 +59,7 @@ namespace CalendarBot.Services
             var month = requestedDate.Month;
 
             var templates = dialog?.GetTemplate(dialog.Response);
-            
+
             if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
             {
                 RunPrasing(year);
@@ -89,7 +89,9 @@ namespace CalendarBot.Services
 
             var text = stringBuilder.ToString();
 
-            return new Response { Text = text };
+            var image = GetImage(requestedDate, templates?.ImageTitleFormat);
+
+            return new Response { Text = text, Image = image };
         }
 
         private Response GetDatesReponse(Dialog dialog)
@@ -193,6 +195,20 @@ namespace CalendarBot.Services
         private void RunPrasing(int year)
         {
             Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
+        }
+
+        private Image GetImage(DateTime requestedDate, string imageTitleFormat)
+        {
+            if (!_cache.TryGet($"Calendar:{requestedDate.Year}:images:{requestedDate.Month}", out string imageId))
+                return null;
+
+            var image = new Image
+            {
+                ImageId = imageId,
+                Title = requestedDate.ToString(imageTitleFormat ?? "MMMM")
+            };
+
+            return image;
         }
     }
 }

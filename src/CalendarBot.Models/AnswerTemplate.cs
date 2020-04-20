@@ -8,6 +8,7 @@ namespace CalendarBot.Models
         public Answer[] Answers { get; set; }
         public string NoYearInfoAnswer { get; set; }
         public string YearFormat { get; set; }
+        public string ImageTitleFormat { get; set; }
 
         public Answer this[DayType dayType]
         {
