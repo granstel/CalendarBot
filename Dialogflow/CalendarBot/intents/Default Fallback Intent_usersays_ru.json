@@ -1,5 +1,53 @@
 [
   {
+    "id": "253d03ac-e9ce-42eb-abb3-c7503f397276",
+    "data": [
+      {
+        "text": "да",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d9eea4f9-b6a2-42aa-8d94-af3c7258d53d",
+    "data": [
+      {
+        "text": "что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0c095c93-551f-4c12-a44e-811bb61efed0",
+    "data": [
+      {
+        "text": "могу но не скажу",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8b7764c-372a-43c7-af78-c0e03adf58b4",
+    "data": [
+      {
+        "text": "понятное дело",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "0f87df13-c76b-407f-aaec-71a6f20c1fd5",
     "data": [
       {
