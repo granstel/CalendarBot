@@ -185,7 +185,7 @@ namespace CalendarBot.Services
 
             if (!dayTypes.Any())
             {
-                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
+                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork, DayType.SuddenNotWork });
             }
 
             return dayTypes;
