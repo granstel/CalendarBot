@@ -4,14 +4,24 @@
     {
         Work,
 
-        //Short work day, usually before holidays
+        /// <summary>
+        /// Short work day, usually before holidays
+        /// </summary>
         PreHoliday,
 
+        /// <summary>
+        /// Holidays
+        /// </summary>
         NotWork,
 
         /// <summary>
         /// Ordinary weekend, not holidays
         /// </summary>
-        Weekend
+        Weekend,
+
+        /// <summary>
+        /// Sudden weekend
+        /// </summary>
+        SuddenNotWork
     }
 }

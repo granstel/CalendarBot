@@ -94,6 +94,13 @@ namespace CalendarBot.Services.Parsers
 
                         continue;
                     }
+
+                    if (day.Attributes.Any(a => a.Name == "class" && a.Value.Contains("nowork")))
+                    {
+                        monthDay.Type = DayType.SuddenNotWork;
+
+                        continue;
+                    }
                 }
 
                 var ranges = _rangeService.GetRanges(month);

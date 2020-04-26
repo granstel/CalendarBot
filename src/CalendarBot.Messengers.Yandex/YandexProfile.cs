@@ -17,7 +17,7 @@ namespace CalendarBot.Messengers.Yandex
             CreateMap<InputModel, Models.Request>()
                 .ForMember(d => d.ChatHash, m => m.ResolveUsing(s => s.Session?.SkillId))
                 .ForMember(d => d.UserHash, m => m.ResolveUsing(s => s.Session?.UserId))
-                .ForMember(d => d.Text, m => m.ResolveUsing(s => s.Request?.OriginalUtterance))
+                .ForMember(d => d.Text, m => m.ResolveUsing(s => s.Request?.Command))
                 .ForMember(d => d.SessionId, m => m.ResolveUsing(s => s.Session?.SessionId))
                 .ForMember(d => d.NewSession, m => m.ResolveUsing(s => s.Session?.New))
                 .ForMember(d => d.Language, m => m.ResolveUsing(s => s.Meta?.Locale))
