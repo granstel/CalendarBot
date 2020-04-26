@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "23796119-b4dd-4dc6-82bd-ce23fcfb788f",
+          "id": "65508e65-e6ae-4117-a1ef-c7c13b925d0c",
           "required": false,
           "dataType": "@sys.date",
           "name": "date",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "fafe86e5-1a90-4362-aa33-71fdd64355e7",
+          "id": "32ff44d2-dc9c-4ad0-bb96-f229f8446965",
           "required": false,
           "dataType": "",
           "name": "payloadType",
@@ -50,8 +50,8 @@
           "condition": "",
           "payload": {
             "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
-            "YearFormat": " {0}го года",
             "Key": 1.0,
+            "YearFormat": " {0}го года",
             "Answers": [
               {
                 "DayType": "Work",
@@ -66,8 +66,12 @@
                 "MainFormat": "d MMMM{0}: dddd, предпраздничный день"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, обычный выходной",
-                "DayType": "Weekend"
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, обычный выходной"
+              },
+              {
+                "DayType": "SuddenNotWork",
+                "MainFormat": "d MMMM{0}: dddd, нерабочий день с сохранением заработной платы"
               }
             ]
           }
@@ -91,8 +95,12 @@
                 "MainFormat": "d MMMM{0} - это dddd короткий день!"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, выходной день",
-                "DayType": "Weekend"
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, выходной день"
+              },
+              {
+                "DayType": "SuddenNotWork",
+                "MainFormat": "d MMMM{0}: dddd, типа нерабочий день, ну... Вы знаете, из-за всех этих проблем... В этот день лучше сидеть дома!"
               }
             ],
             "Key": 2.0,
@@ -124,6 +132,10 @@
               {
                 "DayType": "Weekend",
                 "MainFormat": "d MMMM{0}: dddd, выходной"
+              },
+              {
+                "MainFormat": "d MMMM{0}: dddd, у кого-то рабочий, у кого-то - нерабочий день. Ну вы знаете, из-за всех этих проблем. Сидите дома в общем!",
+                "DayType": "SuddenNotWork"
               }
             ]
           }

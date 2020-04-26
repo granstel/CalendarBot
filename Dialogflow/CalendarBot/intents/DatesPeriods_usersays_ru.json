@@ -1,5 +1,101 @@
 [
   {
+    "id": "b2feb98d-1394-4e67-8f04-3ca0237b42f9",
+    "data": [
+      {
+        "text": "когда уже закончится ",
+        "userDefined": false
+      },
+      {
+        "text": "карантин",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": "?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "1a16f381-0ac5-42c2-a40c-3ef7d8f0d906",
+    "data": [
+      {
+        "text": "карантин",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "b26e0952-bcd1-4864-8359-fdbab9254902",
+    "data": [
+      {
+        "text": "что там с ",
+        "userDefined": false
+      },
+      {
+        "text": "карантином",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "efdc9b3a-8a4f-4661-8771-39c848ec9ecc",
+    "data": [
+      {
+        "text": "ты что-нибудь знаешь о ",
+        "userDefined": false
+      },
+      {
+        "text": "карантине",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7be57cc3-e80b-4c9c-8138-5e53ff8fe214",
+    "data": [
+      {
+        "text": "когда уже закончится карантин?",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "caaa1661-c7d6-4884-8617-aced4a6a49cf",
+    "data": [
+      {
+        "text": "карантин",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "d6bc2d07-254b-4c31-897c-459d310f2423",
     "data": [
       {
