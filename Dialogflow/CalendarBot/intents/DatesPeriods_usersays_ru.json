@@ -1,5 +1,23 @@
 [
   {
+    "id": "36f8ac62-c38a-4baa-8c9d-4af3980a6a75",
+    "data": [
+      {
+        "text": "когда закончится ",
+        "userDefined": false
+      },
+      {
+        "text": "карантин",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "b2feb98d-1394-4e67-8f04-3ca0237b42f9",
     "data": [
       {
@@ -68,7 +86,7 @@
       }
     ],
     "isTemplate": false,
-    "count": 0,
+    "count": 1,
     "updated": 0
   },
   {
