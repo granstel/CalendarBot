@@ -28,6 +28,5 @@ namespace CalendarBot.Api.Middleware
                 throw;
             }
         }
-
     }
 }
