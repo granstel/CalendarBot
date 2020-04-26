@@ -56,7 +56,7 @@ namespace CalendarBot.Services
             var requestedDate = (datePeriodsString?.Split('/').Select(s => s.GetDateOrDefault())).FirstOrDefault();
 
             var year = requestedDate.Year;
-            var month = requestedDate.Month;
+            var monthNumber = requestedDate.Month;
 
             var templates = dialog?.GetTemplate(dialog.Response);
 
@@ -73,11 +73,25 @@ namespace CalendarBot.Services
 
             var stringBuilder = new StringBuilder();
 
+            var month = calendar[monthNumber];
+            var monthName = calendar[monthNumber].Name;
+
+            var yearFormat = string.Empty;
+            if (year != DateTime.Now.Year)
+            {
+                yearFormat = string.Format(templates.YearFormat, year);
+
+                monthName = $"{monthName}{yearFormat}";
+            }
+
+            stringBuilder.Append(string.Format(templates.Introduction ?? "{0}", monthName));
+            stringBuilder.AppendLine();
+
             foreach (var dayType in dayTypes)
             {
                 var template = templates[dayType];
 
-                var ranges = calendar[month][dayType].ToList();
+                var ranges = calendar[monthNumber][dayType].ToList();
 
                 var rangesString = FormatRanges(ranges, template);
 
@@ -89,9 +103,7 @@ namespace CalendarBot.Services
 
             var text = stringBuilder.ToString();
 
-            var image = GetImage(requestedDate, templates?.ImageTitleFormat);
-
-            image.Description = text;
+            var image = GetImage(requestedDate, templates?.ImageTitleFormat, text);
 
             return new Response { Text = text, Image = image };
         }
@@ -196,7 +208,7 @@ namespace CalendarBot.Services
             Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
         }
 
-        private Image GetImage(DateTime requestedDate, string imageTitleFormat)
+        private Image GetImage(DateTime requestedDate, string imageTitleFormat, string description)
         {
             if (!_cache.TryGet($"Calendar:{requestedDate.Year}:images:{requestedDate.Month}", out string imageId))
                 return null;
@@ -204,7 +216,8 @@ namespace CalendarBot.Services
             var image = new Image
             {
                 ImageId = imageId,
-                Title = requestedDate.ToString(imageTitleFormat ?? "MMMM")
+                Title = requestedDate.ToString(imageTitleFormat ?? "MMMM"),
+                Description = description
             };
 
             return image;
