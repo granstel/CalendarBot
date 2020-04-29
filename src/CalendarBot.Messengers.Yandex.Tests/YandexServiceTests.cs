@@ -5,6 +5,7 @@ using CalendarBot.Services;
 using Moq;
 using NUnit.Framework;
 using Yandex.Dialogs.Models;
+using Yandex.Dialogs.Models.Input;
 
 namespace CalendarBot.Messengers.Yandex.Tests
 {

@@ -3,6 +3,7 @@ using AutoMapper;
 using CalendarBot.Models;
 using Yandex.Dialogs.Models;
 using Yandex.Dialogs.Models.Cards;
+using Yandex.Dialogs.Models.Input;
 using YandexModels = Yandex.Dialogs.Models;
 
 namespace CalendarBot.Messengers.Yandex

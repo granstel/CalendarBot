@@ -4,11 +4,12 @@ using AutoMapper;
 using CalendarBot.Models;
 using CalendarBot.Services;
 using NLog;
+using Yandex.Dialogs.Models.Input;
 using YandexModels = Yandex.Dialogs.Models;
 
 namespace CalendarBot.Messengers.Yandex
 {
-    public class YandexService : MessengerService<YandexModels.InputModel, YandexModels.OutputModel>, IYandexService
+    public class YandexService : MessengerService<InputModel, YandexModels.OutputModel>, IYandexService
     {
         private const string PingCommand = "ping";
         private const string PongResponse = "pong";
@@ -23,7 +24,7 @@ namespace CalendarBot.Messengers.Yandex
             _mapper = mapper;
         }
 
-        protected override Request Before(YandexModels.InputModel input)
+        protected override Request Before(InputModel input)
         {
             if (input == default)
             {
@@ -52,7 +53,7 @@ namespace CalendarBot.Messengers.Yandex
             return response;
         }
 
-        protected override async Task<YandexModels.OutputModel> AfterAsync(YandexModels.InputModel input, Response response)
+        protected override async Task<YandexModels.OutputModel> AfterAsync(InputModel input, Response response)
         {
             if (input == default)
             {
@@ -63,18 +64,21 @@ namespace CalendarBot.Messengers.Yandex
 
             _mapper.Map(input, output);
 
+            output.SessionState = new YandexModels.State { Value = "test1" };
+            output.UserStateUpdate = new YandexModels.State { Value = 2 };
+
             return output;
         }
 
-        private YandexModels.InputModel CreateErrorInput()
+        private InputModel CreateErrorInput()
         {
-            return new YandexModels.InputModel
+            return new InputModel
             {
                 Request = new YandexModels.Request
                 {
                     OriginalUtterance = ErrorCommand
                 },
-                Session = new YandexModels.InputSession(),
+                Session = new InputSession(),
                 Version = "1.0"
             };
         }
