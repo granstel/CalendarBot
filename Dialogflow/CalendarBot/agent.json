@@ -12,7 +12,9 @@
     "welcomeIntentSignInRequired": false,
     "startIntents": [],
     "systemIntents": [],
-    "endIntentIds": [],
+    "endIntentIds": [
+      "e1fba321-74b0-408c-bdab-4512d1abc81b"
+    ],
     "oAuthLinking": {
       "required": false,
       "providerId": "",

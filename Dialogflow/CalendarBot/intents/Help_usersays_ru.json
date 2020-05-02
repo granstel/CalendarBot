@@ -1,5 +1,29 @@
 [
   {
+    "id": "c73c7f1f-a8c6-48bf-93b6-5126e3e97213",
+    "data": [
+      {
+        "text": "помощь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4d85db47-9900-4898-813c-fde72c73d033",
+    "data": [
+      {
+        "text": "что ты умеешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "2fcc2517-5704-4058-856a-53245a17eec9",
     "data": [
       {

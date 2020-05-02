@@ -1,0 +1,38 @@
+[
+  {
+    "id": "2e86105b-ec12-495a-b434-f8b555f59fcc",
+    "data": [
+      {
+        "text": "нет",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "aad26564-454a-44d4-92b4-a91643ee5b63",
+    "data": [
+      {
+        "text": "не буду",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e278917d-4e24-4b77-8504-3237af60011c",
+    "data": [
+      {
+        "text": "не надо",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

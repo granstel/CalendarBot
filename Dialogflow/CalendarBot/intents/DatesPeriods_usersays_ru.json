@@ -1,5 +1,57 @@
 [
   {
+    "id": "5753ba03-1933-421d-851f-a26e9d6a5416",
+    "data": [
+      {
+        "text": "когда ",
+        "userDefined": false
+      },
+      {
+        "text": "отдыхаем",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "феврале",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b46ff868-65fd-4873-88f3-20f0004bde30",
+    "data": [
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "743cbc0b-83cf-4e1b-8e4d-cc5b210eab62",
     "data": [
       {

@@ -1,21 +1,11 @@
 [
   {
-    "id": "8642e5b6-1054-41a0-86d9-089c2d03b821",
+    "id": "1630ece8-7897-474d-be75-0c5f05a6c139",
     "data": [
       {
-        "text": "спасибо",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "updated": 0
-  },
-  {
-    "id": "81a76206-102b-4d1b-b8f6-2172c3a47729",
-    "data": [
-      {
-        "text": "ништяк",
+        "text": "пока",
+        "alias": "geo-city",
+        "meta": "@sys.geo-city",
         "userDefined": false
       }
     ],
@@ -24,10 +14,10 @@
     "updated": 0
   },
   {
-    "id": "92da3f4c-de03-4309-8873-eba9beac3183",
+    "id": "35729858-10da-49de-b787-53e1b84c4e82",
     "data": [
       {
-        "text": "нормально",
+        "text": "выход",
         "userDefined": false
       }
     ],
@@ -36,10 +26,10 @@
     "updated": 0
   },
   {
-    "id": "0f099bb1-0e95-45e2-bbb4-e43e6bad4b6e",
+    "id": "0ac0cb81-3a43-4233-a60e-d034fe5b33d6",
     "data": [
       {
-        "text": "нормально говорю",
+        "text": "выйти",
         "userDefined": false
       }
     ],
@@ -48,71 +38,71 @@
     "updated": 0
   },
   {
-    "id": "4d61ac90-e988-4fb0-b07d-76a39ec57a81",
+    "id": "f8267025-2830-46c3-9ffc-a49aafcb64ae",
     "data": [
       {
-        "text": "ништяк",
+        "text": "Выход из навыка",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "32a8e1b7-f69f-4350-873e-22fa030b9c94",
+    "data": [
+      {
+        "text": "Выйти из навыка",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1db892ab-d911-4a26-922e-11523b1d7abd",
+    "data": [
+      {
+        "text": "Завершить диалог",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9025a0e9-c449-40db-9374-4daa3c55451c",
+    "data": [
+      {
+        "text": "Завершить",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0299a856-ee28-460b-9e52-f2152f4289e5",
+    "data": [
+      {
+        "text": "Выйти",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "08b46879-863c-4ede-9037-097e98019211",
+    "data": [
+      {
+        "text": "Выход",
         "meta": "@sys.ignore",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "f9928635-211a-4ce3-ae1e-e69d8dbd9a6d",
-    "data": [
-      {
-        "text": "Это было полезно",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "b55009d9-2a2e-4179-8ff4-f7b89e12ab8f",
-    "data": [
-      {
-        "text": "Спасибо за инфорамцию",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "4311207c-f642-4024-b4c8-b17679ac47cc",
-    "data": [
-      {
-        "text": "Спасибо",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "da5c3fec-cb5b-4e0b-b412-a568eb63ab7f",
-    "data": [
-      {
-        "text": "Круто спасибо",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "c8491ea7-095c-498d-b346-dfce0c935c50",
-    "data": [
-      {
-        "text": "Класс спасибо",
         "userDefined": false
       }
     ],
