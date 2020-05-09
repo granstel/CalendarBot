@@ -1,5 +1,77 @@
 [
   {
+    "id": "7627bff4-e9ba-403b-960e-09e851d334fb",
+    "data": [
+      {
+        "text": "сегодня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " короткий день",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6ae1780d-3be1-4099-b2af-07ddfec3e555",
+    "data": [
+      {
+        "text": "7 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      },
+      {
+        "text": " это что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c5b29292-7ae9-4864-bce5-a65175a135ea",
+    "data": [
+      {
+        "text": "что там ",
+        "userDefined": false
+      },
+      {
+        "text": "25",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "9428902b-0470-4e62-a095-7b8b4505e985",
+    "data": [
+      {
+        "text": "что там ",
+        "userDefined": false
+      },
+      {
+        "text": "23 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "edf846c4-a386-4656-9a97-5f64ea70bae9",
     "data": [
       {

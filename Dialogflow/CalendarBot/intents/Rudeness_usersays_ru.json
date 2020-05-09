@@ -1,0 +1,70 @@
+[
+  {
+    "id": "069c22b8-0c04-4a84-8eb7-9eb78da07070",
+    "data": [
+      {
+        "text": "пойти",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " нафиг",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b4b5fe21-abed-4f96-b535-16f119fd7590",
+    "data": [
+      {
+        "text": "иди нафиг",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "786ccb48-c7c4-47ee-a3d4-c78451c2d2ba",
+    "data": [
+      {
+        "text": "иди на хуй",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4700891e-98b7-4084-8a67-63fb82d4ecf2",
+    "data": [
+      {
+        "text": "что блядь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "45756c2f-3e29-44cc-adc4-63213de606f9",
+    "data": [
+      {
+        "text": "иди на хуй",
+        "alias": "music-artist",
+        "meta": "@sys.music-artist",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  }
+]

@@ -1,5 +1,18 @@
 [
   {
+    "id": "b81bec4d-93d1-4bf0-b528-7d6f4b42acc6",
+    "data": [
+      {
+        "text": "пока",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "1630ece8-7897-474d-be75-0c5f05a6c139",
     "data": [
       {
