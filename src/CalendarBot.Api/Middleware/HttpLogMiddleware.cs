@@ -31,7 +31,7 @@ namespace CalendarBot.Api.Middleware
         {
             var requestId = Guid.NewGuid().ToString("N");
 
-            SetRequestId(requestId);
+            _log.SetProperty("RequestId", requestId);
 
             if (_configuration.AddRequestIdHeader)
             {
@@ -207,20 +207,8 @@ namespace CalendarBot.Api.Middleware
 
             if (clearRequestId)
             {
-                RemoveRequestId();
+                _log.SetProperty("RequestId", null);
             }
-        }
-
-        private void SetRequestId(string requestId)
-        {
-            _log.SetProperty("RequestId", requestId);
-            MappedDiagnosticsLogicalContext.Set("RequestId", requestId);
-        }
-
-        private void RemoveRequestId()
-        {
-            _log.SetProperty("RequestId", null);
-            MappedDiagnosticsLogicalContext.Remove("RequestId");
         }
     }
 }
