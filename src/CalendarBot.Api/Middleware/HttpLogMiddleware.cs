@@ -14,7 +14,7 @@ namespace CalendarBot.Api.Middleware
 {
     public class HttpLogMiddleware
     {
-        private const string RequestIdHeaderName = "X-Query-Id";
+        private const string QueryIdHeaderName = "X-Query-Id";
 
         private readonly RequestDelegate _next;
         private readonly HttpLogConfiguration _configuration;
@@ -29,20 +29,20 @@ namespace CalendarBot.Api.Middleware
         // ReSharper disable once UnusedMember.Global
         public async Task InvokeAsync(HttpContext context)
         {
-            var requestId = Guid.NewGuid().ToString("N");
+            var queryId = Guid.NewGuid().ToString("N");
 
-            _log.SetProperty("RequestId", requestId);
+            _log.SetProperty("QueryId", queryId);
 
             if (_configuration.AddRequestIdHeader)
             {
-                if (!context.Request.Headers.ContainsKey(RequestIdHeaderName))
+                if (!context.Request.Headers.ContainsKey(QueryIdHeaderName))
                 {
-                    context.Request.Headers.Add(RequestIdHeaderName, requestId);
+                    context.Request.Headers.Add(QueryIdHeaderName, queryId);
                 }
 
-                if (!context.Response.Headers.ContainsKey(RequestIdHeaderName))
+                if (!context.Response.Headers.ContainsKey(QueryIdHeaderName))
                 {
-                    context.Response.Headers.Add(RequestIdHeaderName, requestId);
+                    context.Response.Headers.Add(QueryIdHeaderName, queryId);
                 }
             }
 
@@ -207,7 +207,7 @@ namespace CalendarBot.Api.Middleware
 
             if (clearRequestId)
             {
-                _log.SetProperty("RequestId", null);
+                _log.SetProperty("QueryId", null);
             }
         }
     }
