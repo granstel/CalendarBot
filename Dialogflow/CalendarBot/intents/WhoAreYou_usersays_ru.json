@@ -1,0 +1,103 @@
+[
+  {
+    "id": "613f8b6c-ea3a-464b-bec1-39d706300089",
+    "data": [
+      {
+        "text": "понятно включи мне ",
+        "userDefined": false
+      },
+      {
+        "text": "алиса",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "84856aa8-0bfa-4621-9127-f1ab16d5944a",
+    "data": [
+      {
+        "text": "ты кто как тебя зовут",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "681d7101-6e45-4187-b0d5-976e9e1a8053",
+    "data": [
+      {
+        "text": "ты кто",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "cb73b46f-c5c1-4ede-b152-4d7b8af385ca",
+    "data": [
+      {
+        "text": "кто ты",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "fe19e72c-551d-4744-b83a-8639dcadb6a4",
+    "data": [
+      {
+        "text": "что делаешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "28848d84-3370-4b77-a179-afac7652a896",
+    "data": [
+      {
+        "text": "что ты такое",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d2b55533-97a7-4101-927a-a172006f213d",
+    "data": [
+      {
+        "text": "кто тебя создал",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "41cacde2-8a9e-4c97-9b79-736c80411993",
+    "data": [
+      {
+        "text": "как тебя зовут",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

@@ -1,5 +1,539 @@
 [
   {
+    "id": "29013a9b-b092-49f7-8834-937f8aeb04d1",
+    "data": [
+      {
+        "text": "23",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "6bf8fd98-6c08-412d-a48d-3d39047151bd",
+    "data": [
+      {
+        "text": "20 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "4f1061ad-d89b-4675-9aa7-4abb7423465c",
+    "data": [
+      {
+        "text": "23 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "0da4ed3c-07e4-4e6f-a1be-d834f20b117b",
+    "data": [
+      {
+        "text": "25 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e0e04a47-655c-48d1-afc2-be15c0485077",
+    "data": [
+      {
+        "text": "27 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "1a713fa5-99e9-4596-8b27-ffc8f0d46d10",
+    "data": [
+      {
+        "text": "29 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "02e34cab-33e8-4383-9623-121786f1648a",
+    "data": [
+      {
+        "text": "18 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "8dea6ca5-ed14-49eb-bca2-f646d3e48a08",
+    "data": [
+      {
+        "text": "8 марта",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2bbf2c43-0efd-4bc2-bba1-c359342c3993",
+    "data": [
+      {
+        "text": "19 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "abbeea4f-4d8b-49c1-b80e-4bf76444b679",
+    "data": [
+      {
+        "text": "21 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "097a2beb-c93b-4d64-b1d8-d458c1db7dc5",
+    "data": [
+      {
+        "text": "22 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "02ffbdc5-fce4-4b4f-8fd9-413873becda8",
+    "data": [
+      {
+        "text": "24 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "ae7d3577-dc5b-4262-9f9a-ab4ddc196ea6",
+    "data": [
+      {
+        "text": "26 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b527b563-fc1a-4f5d-b720-a76c51d65eaf",
+    "data": [
+      {
+        "text": "28 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0074c448-3772-4311-860e-0a59700ed40b",
+    "data": [
+      {
+        "text": "праздники ",
+        "userDefined": false
+      },
+      {
+        "text": "15 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "de2e4aaf-1425-4370-812b-c91630ff1be6",
+    "data": [
+      {
+        "text": "какие праздники с ",
+        "userDefined": false
+      },
+      {
+        "text": "1 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a500eb3a-397f-4341-976a-8e666c145d2a",
+    "data": [
+      {
+        "text": "какие праздники будут ",
+        "userDefined": false
+      },
+      {
+        "text": "18 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b56a31bf-9e7b-4521-889e-78e21c171be0",
+    "data": [
+      {
+        "text": "какие праздники будут ",
+        "userDefined": false
+      },
+      {
+        "text": "19 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "44294490-8ff3-406d-8e26-3e6f664f537e",
+    "data": [
+      {
+        "text": "рассказать про праздники ",
+        "userDefined": false
+      },
+      {
+        "text": "1 июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2a6215cc-0c50-490f-b449-3acd2c252926",
+    "data": [
+      {
+        "text": "расскажи про праздники ",
+        "userDefined": false
+      },
+      {
+        "text": "1 июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "70459265-c69e-46c4-a669-f20fcb13bd92",
+    "data": [
+      {
+        "text": "какой бразе будет ",
+        "userDefined": false
+      },
+      {
+        "text": "1 июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fe696be0-47dd-40ce-8548-b44b1f8d7340",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "25 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ceaade0f-a5f5-4f71-9f1b-a4837d72f075",
+    "data": [
+      {
+        "text": "12 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "de90d32f-272c-49e0-8612-e8f0635b3ee5",
+    "data": [
+      {
+        "text": "15 марта",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0cf7350e-6556-4136-b747-1018dce8a549",
+    "data": [
+      {
+        "text": "а ты знаешь что у меня день рождения ",
+        "userDefined": false
+      },
+      {
+        "text": "23 июля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "eb017204-c12a-4c72-919d-0ad77aaa55e1",
+    "data": [
+      {
+        "text": "5 июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3919bd22-6bc2-4db3-a905-63e62dbfdc1c",
+    "data": [
+      {
+        "text": "6 июня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e2d86a1b-368f-4177-b225-4eca3119f86b",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "15 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b879338b-0260-4a6d-98f4-70e107fe1b24",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "9 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ff1a88a9-c8db-489f-9669-3bf6f6a9dc67",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "12 мая",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d94ea00e-9281-41f2-91c3-eaa1ca55ce4b",
+    "data": [
+      {
+        "text": "что будет ",
+        "userDefined": false
+      },
+      {
+        "text": "1 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f011ae4d-9d95-43c2-bb8f-c9f844bdbe11",
+    "data": [
+      {
+        "text": "какие выходные ",
+        "userDefined": false
+      },
+      {
+        "text": "сегодня",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f6508415-c530-4f99-aef5-0a1acd3c1c45",
+    "data": [
+      {
+        "text": "что там 25",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d4997a4d-97f6-4f12-acd7-be29b6e9981c",
+    "data": [
+      {
+        "text": "что там ",
+        "userDefined": false
+      },
+      {
+        "text": "23 февраля",
+        "alias": "date",
+        "meta": "@sys.date",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "7627bff4-e9ba-403b-960e-09e851d334fb",
     "data": [
       {
@@ -47,24 +581,6 @@
         "alias": "date",
         "meta": "@sys.date",
         "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "9428902b-0470-4e62-a095-7b8b4505e985",
-    "data": [
-      {
-        "text": "что там ",
-        "userDefined": false
-      },
-      {
-        "text": "23 февраля",
-        "alias": "date",
-        "meta": "@sys.date",
-        "userDefined": false
       }
     ],
     "isTemplate": false,

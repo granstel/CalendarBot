@@ -1,0 +1,36 @@
+{
+  "id": "efa3878e-9422-48f8-a597-584021512d2c",
+  "name": "WhoAreYou",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ru",
+          "condition": "",
+          "speech": [
+            "Давай не будет об этом, лучше спроси что-нибудь по делу",
+            "Вопросы... Вопросы требуют ответов... Лучше спроси про какой-нибудь месяц",
+            "Это сложно... Лучше спроси про какой-нибудь день",
+            "Я предпочитаю об этом не говорить. Лучше спроси что-нибудь по делу"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

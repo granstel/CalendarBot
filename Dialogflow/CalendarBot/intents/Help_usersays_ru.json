@@ -1,9 +1,21 @@
 [
   {
-    "id": "c73c7f1f-a8c6-48bf-93b6-5126e3e97213",
+    "id": "9ade7be0-dddf-4b52-9c5b-b346d19c1128",
     "data": [
       {
         "text": "помощь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "2ba74971-a4d9-4f7e-a900-aa0927bd34a3",
+    "data": [
+      {
+        "text": "какая",
         "userDefined": false
       }
     ],

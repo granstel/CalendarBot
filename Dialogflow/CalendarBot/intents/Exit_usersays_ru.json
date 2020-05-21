@@ -1,5 +1,29 @@
 [
   {
+    "id": "ae63b181-4d34-4b86-8353-4364dda9c55e",
+    "data": [
+      {
+        "text": "выйти",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e8d2a15b-5056-44bd-a066-a1560fc9b2de",
+    "data": [
+      {
+        "text": "пока",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "b81bec4d-93d1-4bf0-b528-7d6f4b42acc6",
     "data": [
       {
@@ -9,21 +33,7 @@
       }
     ],
     "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "1630ece8-7897-474d-be75-0c5f05a6c139",
-    "data": [
-      {
-        "text": "пока",
-        "alias": "geo-city",
-        "meta": "@sys.geo-city",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
+    "count": 1,
     "updated": 0
   },
   {
@@ -31,18 +41,6 @@
     "data": [
       {
         "text": "выход",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "0ac0cb81-3a43-4233-a60e-d034fe5b33d6",
-    "data": [
-      {
-        "text": "выйти",
         "userDefined": false
       }
     ],
