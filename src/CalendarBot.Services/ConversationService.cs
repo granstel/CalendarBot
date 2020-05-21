@@ -53,28 +53,38 @@ namespace CalendarBot.Services
         {
             var datePeriodsString = dialog?.GetParameters("date-period")?.FirstOrDefault();
 
-            var requestedDate = (datePeriodsString?.Split('/').Select(s => s.GetDateOrDefault())).FirstOrDefault();
-
-            var year = requestedDate.Year;
-            var monthNumber = requestedDate.Month;
+            var requestedDate = (datePeriodsString?.Split('/')).FirstOrDefault();
 
             var templates = dialog?.GetTemplate(dialog.Response);
 
-            if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
-            {
-                RunPrasing(year);
+            var dayTypes = GetDayTypes(dialog);
 
+            var year = requestedDate.GetDateOrDefault().Year;
+            var monthNumber = requestedDate.GetDateOrDefault().Month;
+
+            var calendar = GetCalendar(year);
+
+            if (calendar == null)
+            {
                 var answer = string.Format(templates.NoYearInfoAnswer, year);
 
                 return new Response { Text = answer };
             }
 
-            var dayTypes = GetDayTypes(dialog);
+            if (string.IsNullOrEmpty(requestedDate))
+            {
+                return GetClosestDaysResponse(calendar, templates, dayTypes);
+            }
 
-            var stringBuilder = new StringBuilder();
+            return GetRangeResponse(calendar, templates, year, monthNumber, dayTypes);
+
+        }
+
+        private Response GetRangeResponse(Month[] calendar, AnswerTemplate templates, int year, int monthNumber, ICollection<DayType> dayTypes)
+        {
 
             var month = calendar[monthNumber];
-            var monthName = calendar[monthNumber].Name;
+            var monthName = month.Name;
 
             var yearFormat = string.Empty;
             if (year != DateTime.Now.Year)
@@ -84,6 +94,7 @@ namespace CalendarBot.Services
                 monthName = $"{monthName}{yearFormat}";
             }
 
+            var stringBuilder = new StringBuilder();
             stringBuilder.Append(string.Format(templates.Introduction ?? "{0}", monthName));
             stringBuilder.AppendLine();
 
@@ -103,9 +114,45 @@ namespace CalendarBot.Services
 
             var text = stringBuilder.ToString();
 
-            var image = GetImage(requestedDate, templates?.ImageTitleFormat, text);
+            var image = GetImage(year, monthNumber, templates?.ImageTitleFormat, text);
 
             return new Response { Text = text, Image = image };
+        }
+
+        private Response GetClosestDaysResponse(Month[] calendar, AnswerTemplate templates, ICollection<DayType> dayTypes)
+        {
+            var stringBuilder = new StringBuilder();
+
+            var monthNumber = DateTime.Now.Month;
+            var nowDate = DateTime.Now.Date;
+
+            var introduction = templates.ClosestIntroduction ?? "{0}";
+
+            foreach (var dayType in dayTypes)
+            {
+                var template = templates[dayType];
+                var mainFormat = string.Format(introduction, template.MainFormat.ToLower());
+
+                var ranges = calendar.Where(c => c.Number >= monthNumber).SelectMany(c => c[dayType]).Where(r => r.StartDate >= DateTime.Now).Take(1).ToList();
+
+                var rangesString = FormatRanges(ranges, template);
+
+                //The name of the month in the case. Date formatting gives you the correct month name. Convenient, no need to go to other services
+                var monthNameInCase = ranges.FirstOrDefault()?.StartDate.ToString("d MMMM").Split(' ').LastOrDefault();
+
+                var joinedRanges = string.Join(template?.EnumerationSeparator, rangesString);
+
+                var rangeWithMonthName = $"{joinedRanges} {monthNameInCase}";
+
+                stringBuilder.Append(string.Format(mainFormat ?? "{0}", rangeWithMonthName));
+                stringBuilder.AppendLine();
+
+                introduction = "{0}";
+            }
+
+            var text = stringBuilder.ToString();
+
+            return new Response { Text = text };
         }
 
         private Response GetDatesReponse(Dialog dialog)
@@ -118,10 +165,10 @@ namespace CalendarBot.Services
 
             var templates = dialog?.GetTemplate(dialog.Response);
 
-            if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
-            {
-                RunPrasing(year);
+            var calendar = GetCalendar(year);
 
+            if (calendar == null)
+            {
                 var answer = string.Format(templates.NoYearInfoAnswer, year);
 
                 return new Response { Text = answer };
@@ -197,7 +244,7 @@ namespace CalendarBot.Services
 
             if (!dayTypes.Any())
             {
-                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork, DayType.SuddenNotWork });
+                dayTypes.AddRange(new[] { DayType.PreHoliday, DayType.NotWork });
             }
 
             return dayTypes;
@@ -208,19 +255,29 @@ namespace CalendarBot.Services
             Task.Run(() => _consultantParser.ParseCalendar(year)).Forget();
         }
 
-        private Image GetImage(DateTime requestedDate, string imageTitleFormat, string description)
+        private Image GetImage(int year, int monthNumber, string imageTitleFormat, string description)
         {
-            if (!_cache.TryGet($"Calendar:{requestedDate.Year}:images:{requestedDate.Month}", out string imageId))
+            if (!_cache.TryGet($"Calendar:{year}:images:{monthNumber}", out string imageId))
                 return null;
 
             var image = new Image
             {
                 ImageId = imageId,
-                Title = requestedDate.ToString(imageTitleFormat ?? "MMMM"),
+                Title = new DateTime(year, monthNumber, 1).ToString(imageTitleFormat ?? "MMMM"),
                 Description = description
             };
 
             return image;
+        }
+
+        private Month[] GetCalendar(int year)
+        {
+            if (!_cache.TryGet($"Calendar:{year}", out Month[] calendar, true))
+            {
+                RunPrasing(year);
+            }
+
+            return calendar;
         }
     }
 }

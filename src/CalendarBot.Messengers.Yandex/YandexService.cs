@@ -63,10 +63,7 @@ namespace CalendarBot.Messengers.Yandex
             var output = await base.AfterAsync(input, response);
 
             _mapper.Map(input, output);
-
-            output.SessionState = new YandexModels.State { Value = "test1" };
-            output.UserStateUpdate = new YandexModels.State { Value = 2 };
-
+            
             return output;
         }
 

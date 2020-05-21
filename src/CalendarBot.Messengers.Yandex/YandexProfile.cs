@@ -59,7 +59,6 @@ namespace CalendarBot.Messengers.Yandex
                 .ForMember(d => d.Title, m => m.MapFrom(s => s.Title))
                 .ForMember(d => d.Description, m => m.MapFrom(s => s.Description))
                 .ForMember(d => d.Button, m => m.Ignore());
-
         }
     }
 }

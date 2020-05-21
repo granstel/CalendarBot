@@ -16,6 +16,8 @@ namespace CalendarBot.Models
 
         public string Introduction { get; set; }
 
+        public string ClosestIntroduction { get; set; }
+
         public Answer this[DayType dayType]
         {
             get
