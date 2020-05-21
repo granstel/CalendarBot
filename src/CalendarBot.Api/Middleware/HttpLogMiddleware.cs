@@ -14,7 +14,7 @@ namespace CalendarBot.Api.Middleware
 {
     public class HttpLogMiddleware
     {
-        private const string RequestIdHeaderName = "X-Request-Id";
+        private const string RequestIdHeaderName = "X-Query-Id";
 
         private readonly RequestDelegate _next;
         private readonly HttpLogConfiguration _configuration;
