@@ -1,5 +1,22 @@
 [
   {
+    "id": "e957637b-2d9e-4f10-b0b2-ee4ad44a57fe",
+    "data": [
+      {
+        "text": "ближайшие",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " дни",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "a4f51c8c-68a5-4a94-931a-ba78a9ebd5a1",
     "data": [
       {
