@@ -15,5 +15,7 @@ namespace CalendarBot.Models
         public string SessionId { get; set; }
 
         public bool? NewSession { get; set; }
+        
+        public bool IsOldUser { get; set; }
     }
 }

@@ -15,6 +15,8 @@ namespace CalendarBot.Messengers.Yandex
         private const string PongResponse = "pong";
         private const string ErrorCommand = "error";
 
+        private const string oldUSerStateKey = "isOldUser";
+
         private readonly Logger _log = LogManager.GetLogger(nameof(YandexService));
 
         private readonly IMapper _mapper;
@@ -28,12 +30,19 @@ namespace CalendarBot.Messengers.Yandex
         {
             if (input == default)
             {
-                _log.Error("Input = null");
+                _log.Error($"{nameof(InputModel)} is null");
 
                 input = CreateErrorInput();
             }
 
-            return base.Before(input);
+            var result = base.Before(input);
+
+            if (input.TryGetFromSessionState(oldUSerStateKey, out bool IsOldUser))
+            {
+                result.IsOldUser = IsOldUser;
+            }
+
+            return result;
         }
 
         protected override Response ProcessCommand(Request request)
@@ -63,7 +72,9 @@ namespace CalendarBot.Messengers.Yandex
             var output = await base.AfterAsync(input, response);
 
             _mapper.Map(input, output);
-            
+
+            output.AddToUserState(oldUSerStateKey, true);
+
             return output;
         }
 

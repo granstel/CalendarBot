@@ -16,6 +16,7 @@ namespace CalendarBot.Services
         private const string ErrorCommand = "/error";
 
         private const string WelcomeEventName = "Welcome";
+        private const string EasyWelcomeEventName = "EasyWelcome";
         private const string ErrorEventName = "Error";
 
         private readonly Dictionary<string, string> _commandDictionary = new Dictionary<string, string>
@@ -143,7 +144,14 @@ namespace CalendarBot.Services
             // ReSharper disable once ConvertIfStatementToConditionalTernaryExpression
             if (request.NewSession == true && string.IsNullOrEmpty(request.Text))
             {
-                result = GetEvent(WelcomeEventName);
+                if (request.IsOldUser)
+                {
+                    result = GetEvent(EasyWelcomeEventName);
+                }
+                else
+                {
+                    result = GetEvent(WelcomeEventName);
+                }
             }
             else
             {
