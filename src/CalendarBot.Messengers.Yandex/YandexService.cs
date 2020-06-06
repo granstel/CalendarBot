@@ -37,7 +37,7 @@ namespace CalendarBot.Messengers.Yandex
 
             var result = base.Before(input);
 
-            if (input.TryGetFromSessionState(oldUSerStateKey, out bool IsOldUser))
+            if (input.TryGetFromUserState(oldUSerStateKey, out bool IsOldUser))
             {
                 result.IsOldUser = IsOldUser;
             }
