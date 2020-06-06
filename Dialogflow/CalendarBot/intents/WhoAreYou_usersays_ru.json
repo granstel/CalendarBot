@@ -1,5 +1,42 @@
 [
   {
+    "id": "d7911b6e-805a-447b-81be-4f8410698447",
+    "data": [
+      {
+        "text": "ты",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f0277f3e-6851-4886-8c35-c09b5f4fef2e",
+    "data": [
+      {
+        "text": "алиса",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bdb35285-c774-4528-9a9a-471d8759f7e7",
+    "data": [
+      {
+        "text": "у тебя дела",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "613f8b6c-ea3a-464b-bec1-39d706300089",
     "data": [
       {

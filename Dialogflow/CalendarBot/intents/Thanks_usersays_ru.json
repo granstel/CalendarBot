@@ -1,6 +1,6 @@
 [
   {
-    "id": "fd82c186-172c-4490-b8e8-6c850e9b4f0a",
+    "id": "4f901ee4-ce29-4c17-b744-d63b88b4c090",
     "data": [
       {
         "text": "спасибо",
@@ -9,6 +9,18 @@
     ],
     "isTemplate": false,
     "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "d143d39f-2e4d-43a0-8901-2a6518b6e51d",
+    "data": [
+      {
+        "text": "понял",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
     "updated": 0
   },
   {

@@ -9,7 +9,7 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "b72cda61-fddd-4bf0-b232-7206300c5fb0",
+          "id": "a4705898-24e8-4049-98e0-5e7bd050a086",
           "required": false,
           "dataType": "@sys.date",
           "name": "date",
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "9f184082-43d0-4880-b52b-335cc7380c96",
+          "id": "2e262a86-53c8-4c9c-905d-658083bbc736",
           "required": false,
           "dataType": "",
           "name": "payloadType",
@@ -49,31 +49,31 @@
           "lang": "ru",
           "condition": "",
           "payload": {
+            "Key": 1.0,
             "Answers": [
               {
-                "MainFormat": "d MMMM{0}: dddd, рабочий день",
-                "DayType": "Work"
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0}: dddd, рабочий день"
               },
               {
                 "MainFormat": "d MMMM{0}: dddd... Это же праздничный день!",
                 "DayType": "NotWork"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, предпраздничный день",
-                "DayType": "PreHoliday"
+                "DayType": "PreHoliday",
+                "MainFormat": "d MMMM{0}: dddd, предпраздничный день"
               },
               {
                 "MainFormat": "d MMMM{0}: dddd, обычный выходной",
                 "DayType": "Weekend"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, нерабочий день с сохранением заработной платы",
+                "MainFormat": "d MMMM{0}: dddd, внезапный выходной",
                 "DayType": "SuddenNotWork"
               }
             ],
-            "YearFormat": " {0}го года",
-            "Key": 1.0,
-            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить"
+            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
+            "YearFormat": " {0}го года"
           }
         },
         {
@@ -82,7 +82,7 @@
           "condition": "",
           "payload": {
             "Key": 2.0,
-            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ",
+            "YearFormat": " {0} года",
             "Answers": [
               {
                 "MainFormat": "d MMMM{0} - это dddd, рабочий день",
@@ -93,19 +93,19 @@
                 "DayType": "NotWork"
               },
               {
-                "MainFormat": "d MMMM{0} - это dddd короткий день!",
-                "DayType": "PreHoliday"
+                "DayType": "PreHoliday",
+                "MainFormat": "d MMMM{0} - это dddd короткий день!"
               },
               {
                 "MainFormat": "d MMMM{0}: dddd, выходной день",
                 "DayType": "Weekend"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, типа нерабочий день, ну... Вы знаете, из-за всех этих проблем... В этот день лучше сидеть дома!",
+                "MainFormat": "d MMMM{0}: dddd, внеплановый выходной",
                 "DayType": "SuddenNotWork"
               }
             ],
-            "YearFormat": " {0} года"
+            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ"
           }
         },
         {
@@ -127,11 +127,11 @@
                 "DayType": "PreHoliday"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, выходной",
-                "DayType": "Weekend"
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, выходной"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, у кого-то рабочий, у кого-то - нерабочий день. Ну вы знаете, из-за всех этих проблем. Сидите дома в общем!",
+                "MainFormat": "d MMMM{0}: dddd, внезапный выходной день",
                 "DayType": "SuddenNotWork"
               }
             ],

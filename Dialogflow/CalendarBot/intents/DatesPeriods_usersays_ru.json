@@ -1,5 +1,445 @@
 [
   {
+    "id": "30630f2a-3061-49a5-a14e-d082df99da09",
+    "data": [
+      {
+        "text": "ближайший ",
+        "userDefined": false
+      },
+      {
+        "text": "праздник",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c6c28595-863c-4811-830a-55138f37a7e7",
+    "data": [
+      {
+        "text": "июнь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "f0f9b99c-1c18-4392-b6c1-d32238042f3b",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ad80b9fb-43aa-4763-93f0-cdbcb27ec57c",
+    "data": [
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "a330055f-0fd8-4421-826a-034630790ed2",
+    "data": [
+      {
+        "text": "рассказать про ближайшие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b04f0343-d5cf-4489-b300-37fd9d70fc24",
+    "data": [
+      {
+        "text": "ближайшие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "4c6c30b2-1703-4b0b-930c-145422df68eb",
+    "data": [
+      {
+        "text": "что там в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае 2020 год",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "4a967ab9-cbd0-4b13-8ab5-775d077df937",
+    "data": [
+      {
+        "text": "когда ближайшие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e9957684-4a02-4a2a-8281-6be7887c8c87",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "июнь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "352c9689-64cf-470b-a069-f869794ad7ad",
+    "data": [
+      {
+        "text": "сколько ",
+        "userDefined": false
+      },
+      {
+        "text": "праздников",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "этом году",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "13ac148b-4240-4328-8161-1da1e87d1576",
+    "data": [
+      {
+        "text": "следующие ",
+        "userDefined": false
+      },
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 3,
+    "updated": 0
+  },
+  {
+    "id": "a8dfaac9-fb9d-46b4-b4a9-3a49aede7d30",
+    "data": [
+      {
+        "text": "расскажи",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "da5a5aef-8836-400f-919c-39ec091de085",
+    "data": [
+      {
+        "text": "короткие",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " месяцы в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e2ee8098-120f-47c8-ae46-b2badfa9e60a",
+    "data": [
+      {
+        "text": "когда ближайший ",
+        "userDefined": false
+      },
+      {
+        "text": "праздник",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2f13dffe-ca56-45cc-882a-5c19758f973a",
+    "data": [
+      {
+        "text": "что там в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "34a0f757-b083-472a-9066-ac3b10d728ba",
+    "data": [
+      {
+        "text": "сколько ",
+        "userDefined": false
+      },
+      {
+        "text": "выходных",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "8db805c7-682c-4fdc-8904-deb61b192110",
+    "data": [
+      {
+        "text": "какие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "сентябре",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "177065ad-1193-434c-b94b-25879845668f",
+    "data": [
+      {
+        "text": "какие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "a8d0ae6a-20c8-4872-ba1e-c18ea0552e4b",
+    "data": [
+      {
+        "text": "алиса ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c6c790ea-c585-4f8c-98b6-e8cb10ddf2d8",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "c37c9433-70e0-4ad6-8b86-ce0837443cd0",
+    "data": [
+      {
+        "text": "скоро",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "31d1d5a7-0313-4a21-98c5-b7dadd1a94fe",
+    "data": [
+      {
+        "text": "близкие",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "7670c2d5-4334-4145-897b-1940b160b9de",
     "data": [
       {
@@ -87,42 +527,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "21b07d04-ceb5-4991-a5cd-b9f6dc5a1a77",
-    "data": [
-      {
-        "text": "ближайшие ",
-        "userDefined": false
-      },
-      {
-        "text": "праздники",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "b896de13-9b34-4f28-82e0-bcf7d021af8d",
-    "data": [
-      {
-        "text": "что там в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -287,30 +691,6 @@
     "updated": 0
   },
   {
-    "id": "59225ba3-ae47-44e8-b6dc-4cbfbdf8f808",
-    "data": [
-      {
-        "text": "праздники",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июле",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "updated": 0
-  },
-  {
     "id": "dbdf0804-a496-4522-b841-be9c8c3b419c",
     "data": [
       {
@@ -462,34 +842,6 @@
     ],
     "isTemplate": false,
     "count": 1,
-    "updated": 0
-  },
-  {
-    "id": "35e81a47-7204-4bb8-8326-78a8d90e67d5",
-    "data": [
-      {
-        "text": "какие ",
-        "userDefined": false
-      },
-      {
-        "text": "праздники",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
     "updated": 0
   },
   {
@@ -719,20 +1071,6 @@
     "data": [
       {
         "text": "январь",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "3b406f64-d861-413e-9c64-70dbda1895e7",
-    "data": [
-      {
-        "text": "июнь",
         "alias": "date-period",
         "meta": "@sys.date-period",
         "userDefined": false
@@ -1803,24 +2141,6 @@
     "updated": 0
   },
   {
-    "id": "93d812c5-e528-425b-a029-73dca661a240",
-    "data": [
-      {
-        "text": "расскажи про ",
-        "userDefined": false
-      },
-      {
-        "text": "июнь",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
     "id": "6eb64bc5-520e-4a77-bc21-fdf5ed638a16",
     "data": [
       {
@@ -2236,30 +2556,6 @@
     ],
     "isTemplate": false,
     "count": 2,
-    "updated": 0
-  },
-  {
-    "id": "b11d73a6-aeb2-48cc-ab5a-7b8f27489ff2",
-    "data": [
-      {
-        "text": "выходные",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -3900,34 +4196,6 @@
       },
       {
         "text": "сентябре",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": true
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "26e6785a-a3f7-4618-aa23-998499e3f608",
-    "data": [
-      {
-        "text": "сколько ",
-        "userDefined": false
-      },
-      {
-        "text": "выходных",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": false
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
         "alias": "date-period",
         "meta": "@sys.date-period",
         "userDefined": true

@@ -1,5 +1,169 @@
 [
   {
+    "id": "708b60e8-4e6d-4b50-9287-c1185384705a",
+    "data": [
+      {
+        "text": "алиса завтра в субботу в 10 часов утра поставь напоминание",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "23878770-a2f6-4cd8-aad1-45ee8877ae25",
+    "data": [
+      {
+        "text": "чего ты можешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "ed0155be-a134-4c52-90b9-75028e779da8",
+    "data": [
+      {
+        "text": "поищи говорю",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "1c1f9b6f-0f87-429d-a72b-ae077d3fb898",
+    "data": [
+      {
+        "text": "что ты можешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "03f6ca8c-1447-4826-8918-a2b6eb4a364e",
+    "data": [
+      {
+        "text": "открой календарь посмотри список встреч на ",
+        "userDefined": false
+      },
+      {
+        "text": "завтра",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "97448e2d-ac91-4066-a6df-fbfd12f62d24",
+    "data": [
+      {
+        "text": "какие у меня встречи",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a720dce5-0add-4b2f-9ca5-38d6b417c1af",
+    "data": [
+      {
+        "text": "встреча",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "17f2e6a0-2652-4cc1-a031-9a41ea157f06",
+    "data": [
+      {
+        "text": "алиса",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " добавь ",
+        "userDefined": false
+      },
+      {
+        "text": "напоминание",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ba8eb34b-91af-40c6-ba51-6a2e5ea7187e",
+    "data": [
+      {
+        "text": "алиса напоминание",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "47a941a6-e947-42e0-9a33-fa68b2d6b266",
+    "data": [
+      {
+        "text": "добавь ",
+        "userDefined": false
+      },
+      {
+        "text": "напоминание",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "33ff3b9f-8b06-40ef-8f63-5db314ca74ba",
+    "data": [
+      {
+        "text": "алиса",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " установи ",
+        "userDefined": false
+      },
+      {
+        "text": "напоминание",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "9ade7be0-dddf-4b52-9c5b-b346d19c1128",
     "data": [
       {
@@ -9,18 +173,6 @@
     ],
     "isTemplate": false,
     "count": 1,
-    "updated": 0
-  },
-  {
-    "id": "2ba74971-a4d9-4f7e-a900-aa0927bd34a3",
-    "data": [
-      {
-        "text": "какая",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
     "updated": 0
   },
   {
