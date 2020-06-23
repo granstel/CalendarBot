@@ -25,7 +25,8 @@ namespace CalendarBot.Api
         // ReSharper disable once UnusedMember.Global
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
-            services.AddMvc();
+            services.AddMvcCore()
+                .AddJsonFormatters();
 
             _applicationContainer = DependencyConfiguration.Configure(services, _configuration);
 
