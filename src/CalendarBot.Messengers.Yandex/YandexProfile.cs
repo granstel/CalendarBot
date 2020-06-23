@@ -22,13 +22,16 @@ namespace CalendarBot.Messengers.Yandex
                 .ForMember(d => d.SessionId, m => m.ResolveUsing(s => s.Session?.SessionId))
                 .ForMember(d => d.NewSession, m => m.ResolveUsing(s => s.Session?.New))
                 .ForMember(d => d.Language, m => m.ResolveUsing(s => s.Meta?.Locale))
-                .ForMember(d => d.Source, m => m.UseValue(Source.Yandex));
+                .ForMember(d => d.Source, m => m.UseValue(Source.Yandex))
+                .ForMember(d => d.IsOldUser, m => m.Ignore());
 
             CreateMap<Models.Response, OutputModel>()
                 .ForMember(d => d.Response, m => m.MapFrom(s => s))
                 .ForMember(d => d.Session, m => m.MapFrom(s => s))
                 .ForMember(d => d.Version, m => m.Ignore())
-                .ForMember(d => d.StartAccountLinking, m => m.Ignore());
+                .ForMember(d => d.StartAccountLinking, m => m.Ignore())
+                .ForMember(d => d.UserStateUpdate, m => m.Ignore())
+                .ForMember(d => d.SessionState, m => m.Ignore());
 
             CreateMap<Models.Response, YandexModels.Response>()
                 .ForMember(d => d.Text, m => m.MapFrom(s => s.Text.Replace(Environment.NewLine, "\n")))
@@ -46,13 +49,17 @@ namespace CalendarBot.Messengers.Yandex
             CreateMap<Models.Response, Session>()
                 .ForMember(d => d.UserId, m => m.MapFrom(s => s.UserHash))
                 .ForMember(d => d.MessageId, m => m.Ignore())
-                .ForMember(d => d.SessionId, m => m.Ignore());
+                .ForMember(d => d.SessionId, m => m.Ignore())
+                .ForMember(d => d.Application, m => m.Ignore())
+                .ForMember(d => d.User, m => m.Ignore());
 
             CreateMap<InputModel, OutputModel>()
                 .ForMember(d => d.Session, m => m.MapFrom(s => s.Session))
                 .ForMember(d => d.Version, m => m.MapFrom(s => s.Version))
                 .ForMember(d => d.Response, m => m.Ignore())
-                .ForMember(d => d.StartAccountLinking, m => m.Ignore());
+                .ForMember(d => d.StartAccountLinking, m => m.Ignore())
+                .ForMember(d => d.UserStateUpdate, m => m.Ignore())
+                .ForMember(d => d.SessionState, m => m.Ignore());
 
             CreateMap<Image, BigImageCard>()
                 .ForMember(d => d.ImageId, m => m.MapFrom(s => s.ImageId))
