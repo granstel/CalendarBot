@@ -9,9 +9,9 @@
       "affectedContexts": [],
       "parameters": [
         {
-          "id": "a4705898-24e8-4049-98e0-5e7bd050a086",
+          "id": "882c4b00-dfe7-41b1-b51d-afb43bbfd917",
           "required": false,
-          "dataType": "@sys.date",
+          "dataType": "@sys.date-time",
           "name": "date",
           "value": "$date",
           "promptMessages": [],
@@ -21,7 +21,7 @@
           "isList": false
         },
         {
-          "id": "2e262a86-53c8-4c9c-905d-658083bbc736",
+          "id": "6c51a68e-58b8-4c73-8489-5cc2123c9ca1",
           "required": false,
           "dataType": "",
           "name": "payloadType",
@@ -49,6 +49,8 @@
           "lang": "ru",
           "condition": "",
           "payload": {
+            "YearFormat": " {0}го года",
+            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
             "Key": 1.0,
             "Answers": [
               {
@@ -56,24 +58,22 @@
                 "MainFormat": "d MMMM{0}: dddd, рабочий день"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd... Это же праздничный день!",
-                "DayType": "NotWork"
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd... Это же праздничный день!"
               },
               {
                 "DayType": "PreHoliday",
                 "MainFormat": "d MMMM{0}: dddd, предпраздничный день"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, обычный выходной",
-                "DayType": "Weekend"
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, обычный выходной"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, внезапный выходной",
-                "DayType": "SuddenNotWork"
+                "DayType": "SuddenNotWork",
+                "MainFormat": "d MMMM{0}: dddd, внезапный выходной"
               }
-            ],
-            "NoYearInfoAnswer": "К сожалению, у меня пока нет информации про {0} год. Спросите меня чуть позже, может тогда смогу ответить",
-            "YearFormat": " {0}го года"
+            ]
           }
         },
         {
@@ -81,31 +81,31 @@
           "lang": "ru",
           "condition": "",
           "payload": {
-            "Key": 2.0,
-            "YearFormat": " {0} года",
+            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ",
             "Answers": [
               {
-                "MainFormat": "d MMMM{0} - это dddd, рабочий день",
-                "DayType": "Work"
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0} - это dddd, рабочий день"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, да это же праздничный день!",
-                "DayType": "NotWork"
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd, да это же праздничный день!"
               },
               {
                 "DayType": "PreHoliday",
                 "MainFormat": "d MMMM{0} - это dddd короткий день!"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, выходной день",
-                "DayType": "Weekend"
+                "DayType": "Weekend",
+                "MainFormat": "d MMMM{0}: dddd, выходной день"
               },
               {
                 "MainFormat": "d MMMM{0}: dddd, внеплановый выходной",
                 "DayType": "SuddenNotWork"
               }
             ],
-            "NoYearInfoAnswer": "Прошу прощения но... У меня пока нет информации про {0} год. Спросите чуть позже, может тогда у меня появится ответ"
+            "Key": 2.0,
+            "YearFormat": " {0} года"
           }
         },
         {
@@ -113,14 +113,15 @@
           "lang": "ru",
           "condition": "",
           "payload": {
+            "YearFormat": " ({0}го года)",
             "Answers": [
               {
-                "MainFormat": "d MMMM{0}: dddd, обычный рабочий день",
-                "DayType": "Work"
+                "DayType": "Work",
+                "MainFormat": "d MMMM{0}: dddd, обычный рабочий день"
               },
               {
-                "MainFormat": "d MMMM{0}: dddd, праздник!",
-                "DayType": "NotWork"
+                "DayType": "NotWork",
+                "MainFormat": "d MMMM{0}: dddd, праздник!"
               },
               {
                 "MainFormat": "d MMMM{0}: dddd, это короткий день!",
@@ -135,7 +136,6 @@
                 "DayType": "SuddenNotWork"
               }
             ],
-            "YearFormat": " ({0}го года)",
             "Key": 3.0,
             "NoYearInfoAnswer": "Эмм, тут такое дело... Я пока ничего не знаю про {0} год. Попробуйте спросить меня чуть позже, наверняка смогу ответить"
           }

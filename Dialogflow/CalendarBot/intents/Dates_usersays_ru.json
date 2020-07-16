@@ -1,5 +1,338 @@
 [
   {
+    "id": "9fbafe14-bfc0-404e-80d1-f8d9b1b1e8a6",
+    "data": [
+      {
+        "text": "через месяц",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c9da2239-4d82-4a66-b6e6-e48fa78aeadb",
+    "data": [
+      {
+        "text": "через ",
+        "userDefined": false
+      },
+      {
+        "text": "две недели",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "6d2df1de-659d-4f9c-9f53-cb3f3661580a",
+    "data": [
+      {
+        "text": "24 июня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "66def6aa-fd6f-4e0d-bc54-f55bc1e749de",
+    "data": [
+      {
+        "text": "какой ",
+        "userDefined": false
+      },
+      {
+        "text": "сегодня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      },
+      {
+        "text": " день",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "7a9488a6-a0d2-451c-a372-2f0ddf9fbe65",
+    "data": [
+      {
+        "text": "ясно а ",
+        "userDefined": false
+      },
+      {
+        "text": "сегодня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      },
+      {
+        "text": " что за день",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c3b3f486-eec6-4011-aa2a-c2d413b531f1",
+    "data": [
+      {
+        "text": "а как же ",
+        "userDefined": false
+      },
+      {
+        "text": "24 июня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b0458de5-b1eb-43ef-b698-f80ef1334d9b",
+    "data": [
+      {
+        "text": "какой праздник будет ",
+        "userDefined": false
+      },
+      {
+        "text": "15 июня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "545d6fdb-0938-4a8f-9203-dda8a6ea6440",
+    "data": [
+      {
+        "text": "когда будет ",
+        "userDefined": false
+      },
+      {
+        "text": "16 июня 2020 года",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5885a75f-42b6-40ab-b986-186759eafaa8",
+    "data": [
+      {
+        "text": "16 июня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      },
+      {
+        "text": " это среда",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "8184f607-a826-442a-b59a-7386af5dd9b3",
+    "data": [
+      {
+        "text": "когда будет ",
+        "userDefined": false
+      },
+      {
+        "text": "17 июня 2020 года",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "b0aab219-0340-4aad-9699-bf5773d72de4",
+    "data": [
+      {
+        "text": "когда ",
+        "userDefined": false
+      },
+      {
+        "text": "день украины",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cbad4315-06bf-4722-9071-863a3b6d84a2",
+    "data": [
+      {
+        "text": "когда ",
+        "userDefined": false
+      },
+      {
+        "text": "день россии",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1201cce7-37e6-4058-8e0d-a8cb93836935",
+    "data": [
+      {
+        "text": "когда будет ",
+        "userDefined": false
+      },
+      {
+        "text": "победа",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7044c494-174b-4189-92c5-745949b54756",
+    "data": [
+      {
+        "text": "когда будет ",
+        "userDefined": false
+      },
+      {
+        "text": "новый год",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1eb36fa7-f32a-4f6b-afd1-bade61f48c24",
+    "data": [
+      {
+        "text": "когда будет сталин ",
+        "userDefined": false
+      },
+      {
+        "text": "новый год",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bb3ea409-dc90-40f9-9db1-8793d39b7d43",
+    "data": [
+      {
+        "text": "когда ",
+        "userDefined": false
+      },
+      {
+        "text": "день победы",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "29d523f8-c656-418d-af9b-e63e8398fa14",
+    "data": [
+      {
+        "text": "когда будет парад ",
+        "userDefined": false
+      },
+      {
+        "text": "дня победы",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2e32cff8-a7a2-44fb-9d6f-03e6b95383fa",
+    "data": [
+      {
+        "text": "какой ",
+        "userDefined": false
+      },
+      {
+        "text": "праздник",
+        "meta": "@sys.ignore",
+        "userDefined": true
+      },
+      {
+        "text": " ",
+        "userDefined": false
+      },
+      {
+        "text": "8 июня",
+        "alias": "date",
+        "meta": "@sys.date-time",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "c0e32d3f-d5b1-4cc2-a38c-332622434645",
     "data": [
       {
@@ -9,7 +342,7 @@
       {
         "text": "24 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -27,7 +360,7 @@
       {
         "text": "1 июля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -45,7 +378,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       },
       {
@@ -67,7 +400,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -81,7 +414,7 @@
       {
         "text": "24 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -99,7 +432,7 @@
       {
         "text": "среда",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -113,7 +446,7 @@
       {
         "text": "18",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -127,7 +460,7 @@
       {
         "text": "18",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       },
       {
@@ -145,7 +478,7 @@
       {
         "text": "8 марта",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -159,7 +492,7 @@
       {
         "text": "9 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -173,7 +506,7 @@
       {
         "text": "18 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -187,7 +520,7 @@
       {
         "text": "19 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -201,7 +534,7 @@
       {
         "text": "9",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -215,7 +548,7 @@
       {
         "text": "9 апреля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -229,7 +562,7 @@
       {
         "text": "31 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -243,7 +576,7 @@
       {
         "text": "1 сентября",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -261,7 +594,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -283,7 +616,7 @@
       {
         "text": "сегодня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -305,7 +638,7 @@
       {
         "text": "понедельник",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -347,7 +680,7 @@
       {
         "text": "послезавтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -365,7 +698,7 @@
       {
         "text": "23 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -383,7 +716,7 @@
       {
         "text": "20 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -401,7 +734,7 @@
       {
         "text": "1 июня 2020 года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -419,7 +752,7 @@
       {
         "text": "5 августа",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -433,7 +766,7 @@
       {
         "text": "через неделю",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -451,7 +784,7 @@
       {
         "text": "четверг",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -469,7 +802,7 @@
       {
         "text": "пятница",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -483,7 +816,7 @@
       {
         "text": "послезавтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -497,7 +830,7 @@
       {
         "text": "1 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -511,7 +844,7 @@
       {
         "text": "2 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -525,7 +858,7 @@
       {
         "text": "3 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -539,7 +872,7 @@
       {
         "text": "24 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -553,7 +886,7 @@
       {
         "text": "25 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -567,7 +900,7 @@
       {
         "text": "26 май",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -581,7 +914,7 @@
       {
         "text": "27 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -595,7 +928,7 @@
       {
         "text": "28 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -609,7 +942,7 @@
       {
         "text": "29 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -623,7 +956,7 @@
       {
         "text": "30 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -637,7 +970,7 @@
       {
         "text": "22 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -655,7 +988,7 @@
       {
         "text": "12 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -669,7 +1002,7 @@
       {
         "text": "23",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -683,7 +1016,7 @@
       {
         "text": "20 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -697,7 +1030,7 @@
       {
         "text": "23 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -711,7 +1044,7 @@
       {
         "text": "21 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -725,7 +1058,7 @@
       {
         "text": "26 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -743,7 +1076,7 @@
       {
         "text": "15 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -761,7 +1094,7 @@
       {
         "text": "1 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -779,7 +1112,7 @@
       {
         "text": "18 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -797,7 +1130,7 @@
       {
         "text": "19 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -815,7 +1148,7 @@
       {
         "text": "1 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -833,7 +1166,7 @@
       {
         "text": "1 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -851,7 +1184,7 @@
       {
         "text": "1 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -869,7 +1202,7 @@
       {
         "text": "25 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -883,7 +1216,7 @@
       {
         "text": "12 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -897,7 +1230,7 @@
       {
         "text": "15 марта",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -915,7 +1248,7 @@
       {
         "text": "23 июля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -929,7 +1262,7 @@
       {
         "text": "5 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -943,7 +1276,7 @@
       {
         "text": "6 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -961,7 +1294,7 @@
       {
         "text": "15 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -979,7 +1312,7 @@
       {
         "text": "9 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -997,7 +1330,7 @@
       {
         "text": "12 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1015,7 +1348,7 @@
       {
         "text": "1 февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1033,7 +1366,7 @@
       {
         "text": "сегодня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1063,7 +1396,7 @@
       {
         "text": "23 февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1077,7 +1410,7 @@
       {
         "text": "сегодня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1095,7 +1428,7 @@
       {
         "text": "7 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1117,7 +1450,7 @@
       {
         "text": "25",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1135,7 +1468,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1153,7 +1486,7 @@
       {
         "text": "двадцать пятое мая две тысячи двадцать второго года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1171,7 +1504,7 @@
       {
         "text": "15 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1189,7 +1522,7 @@
       {
         "text": "двадцать пять",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       },
       {
@@ -1207,7 +1540,7 @@
       {
         "text": "двадцать пятое",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1229,7 +1562,7 @@
       {
         "text": "пятнадцатое июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1247,7 +1580,7 @@
       {
         "text": "четырнадцатое июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1265,7 +1598,7 @@
       {
         "text": "двенадцатого июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1283,7 +1616,7 @@
       {
         "text": "семнадцатое апреля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1297,7 +1630,7 @@
       {
         "text": "двадцать второе декабря",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1311,7 +1644,7 @@
       {
         "text": "четырнадцатое февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1325,7 +1658,7 @@
       {
         "text": "7 марта",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1343,7 +1676,7 @@
       {
         "text": "сегодня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1357,7 +1690,7 @@
       {
         "text": "22 декабря",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1375,7 +1708,7 @@
       {
         "text": "через неделю",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1393,7 +1726,7 @@
       {
         "text": "через неделю",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1411,7 +1744,7 @@
       {
         "text": "через две недели",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1425,7 +1758,7 @@
       {
         "text": "через две недели",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1443,7 +1776,7 @@
       {
         "text": "через две недели",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1457,7 +1790,7 @@
       {
         "text": "29 апреля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1475,7 +1808,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1493,7 +1826,7 @@
       {
         "text": "29",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -1511,7 +1844,7 @@
       {
         "text": "29го",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1525,7 +1858,7 @@
       {
         "text": "7 марта прошлого года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1539,7 +1872,7 @@
       {
         "text": "7 марта позапрошлого года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1553,7 +1886,7 @@
       {
         "text": "7 марта 2019",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1567,7 +1900,7 @@
       {
         "text": "10 ноября",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1581,7 +1914,7 @@
       {
         "text": "17 июля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1595,7 +1928,7 @@
       {
         "text": "18 июля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1609,7 +1942,7 @@
       {
         "text": "12 июня",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1623,7 +1956,7 @@
       {
         "text": "10 мая",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1637,7 +1970,7 @@
       {
         "text": "1 января",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1651,7 +1984,7 @@
       {
         "text": "1 января 20го года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1665,7 +1998,7 @@
       {
         "text": "11 января двадцатого года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1679,7 +2012,7 @@
       {
         "text": "11 апреля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1693,7 +2026,7 @@
       {
         "text": "1 января 20 года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1707,7 +2040,7 @@
       {
         "text": "1 января этого года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1721,7 +2054,7 @@
       {
         "text": "1 января",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1739,7 +2072,7 @@
       {
         "text": "7 марта 20го",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1753,7 +2086,7 @@
       {
         "text": "7 марта 2020",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1767,7 +2100,7 @@
       {
         "text": "29 апреля следующего года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1781,7 +2114,7 @@
       {
         "text": "7 марта следующего года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1795,7 +2128,7 @@
       {
         "text": "7 марта этого года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1809,7 +2142,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1831,7 +2164,7 @@
       {
         "text": "завтра",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1849,7 +2182,7 @@
       {
         "text": "25е",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1867,7 +2200,7 @@
       {
         "text": "25",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       },
       {
@@ -1885,7 +2218,7 @@
       {
         "text": "25е",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -1919,7 +2252,7 @@
       {
         "text": "25го",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1933,7 +2266,7 @@
       {
         "text": "25",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       },
       {
@@ -1951,7 +2284,7 @@
       {
         "text": "вторник через неделю",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1977,7 +2310,7 @@
       {
         "text": "29 февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -1991,7 +2324,7 @@
       {
         "text": "29 февраля 21го года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -2005,7 +2338,7 @@
       {
         "text": "28 февраля следующего года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -2019,7 +2352,7 @@
       {
         "text": "29 февраля следующего года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -2033,7 +2366,7 @@
       {
         "text": "28 февраля 2021 года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -2047,7 +2380,7 @@
       {
         "text": "29 февраля 2021 года",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       }
     ],
@@ -2061,7 +2394,7 @@
       {
         "text": "30 февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -2075,7 +2408,7 @@
       {
         "text": "29 февраля",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": false
       },
       {
@@ -2097,7 +2430,7 @@
       {
         "text": "вторник через неделю",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],
@@ -2111,7 +2444,7 @@
       {
         "text": "двадцать девятое марта",
         "alias": "date",
-        "meta": "@sys.date",
+        "meta": "@sys.date-time",
         "userDefined": true
       }
     ],

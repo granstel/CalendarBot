@@ -1,5 +1,41 @@
 [
   {
+    "id": "232f18e4-e4a9-4064-b2b3-336996685ac9",
+    "data": [
+      {
+        "text": "выйди",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "1185d0bf-4f52-403a-bf19-fa7de8a0ae2e",
+    "data": [
+      {
+        "text": "закройся",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e0d75dc7-7a1f-45f1-968a-f77940167f7e",
+    "data": [
+      {
+        "text": "выйти",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
     "id": "c9c36774-01b9-4e77-b018-e908c35b3a01",
     "data": [
       {
@@ -9,18 +45,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "5492929a-5d18-41c6-befa-77538cd41643",
-    "data": [
-      {
-        "text": "выйти",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {

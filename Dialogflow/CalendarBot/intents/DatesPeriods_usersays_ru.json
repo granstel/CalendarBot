@@ -1,5 +1,573 @@
 [
   {
+    "id": "0d1a48ab-78e9-4d42-b1dd-a91d9d8b7a16",
+    "data": [
+      {
+        "text": "весной",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "87a50fc9-2a26-4771-8811-731dbed9880d",
+    "data": [
+      {
+        "text": "зимой",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c561fc1b-553c-454f-90a5-b28a2d3b94a2",
+    "data": [
+      {
+        "text": "осенью",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "0f31907a-9a9f-446f-b2e5-bfbbeb73bf07",
+    "data": [
+      {
+        "text": "летом",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c3fe313d-30d0-4aeb-ab03-14b17ed08c27",
+    "data": [
+      {
+        "text": "весна",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bf3431e4-8bb5-40c1-bb8f-16bce4bd20ea",
+    "data": [
+      {
+        "text": "лето",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "ea7f9ad5-354d-4e52-91c6-8f1d48849aa9",
+    "data": [
+      {
+        "text": "зима",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "5116c7b2-4158-4c96-b1c4-e27db4ddd9db",
+    "data": [
+      {
+        "text": "осень",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2f663064-776c-443d-9f7d-52dc61368f74",
+    "data": [
+      {
+        "text": "какие ",
+        "userDefined": false
+      },
+      {
+        "text": "праздники",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "июне",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "e3f3048c-61e1-4521-b916-0d97ae52120c",
+    "data": [
+      {
+        "text": "что там в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "458d3824-a834-40ec-a1f7-90d747c4c501",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "февраль",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "9e85a0ed-b92b-4286-996a-b279e4db8159",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "март",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "39f07282-72eb-42bf-86e3-7329a71259be",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "май",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "fcaf7774-0b72-446f-b6a4-b3739b57c456",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "июнь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "401dad2c-1732-4971-b3be-efcd8be97a27",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "июль",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "050b93cf-ba3f-4354-ab0d-170d5dbe0ac3",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "август",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3a730e66-7f3c-49b2-81ae-5764cf7a669d",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "сентябрь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "871fffb9-05e5-4c56-a810-f7af5c3de524",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "октябрь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f4596e2b-ffde-4a21-b3e9-024b508f677f",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "ноябрь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d9de6e43-645a-47dd-8f5f-58b4b0b57a73",
+    "data": [
+      {
+        "text": "расскажи про ",
+        "userDefined": false
+      },
+      {
+        "text": "декабрь",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "2c7f4049-f8e0-445c-bc22-32a605f1f472",
+    "data": [
+      {
+        "text": "сокращенные дни",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f0cbe385-4bd7-4d77-83a5-58e048462ec5",
+    "data": [
+      {
+        "text": "в ",
+        "userDefined": false
+      },
+      {
+        "text": "этом месяце",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      },
+      {
+        "text": " что то есть",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "60c64a64-d4af-4108-a74a-6629beb32f85",
+    "data": [
+      {
+        "text": "а в ",
+        "userDefined": false
+      },
+      {
+        "text": "июле",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": false
+      },
+      {
+        "text": " что",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "3393fd4a-1380-4c7a-aeb1-eff88be8a3cf",
+    "data": [
+      {
+        "text": "в каком месяце больше всего праздников",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "fa9b6515-b430-4cf3-a0f6-3b18ec65a8a1",
+    "data": [
+      {
+        "text": "когда ближайший ",
+        "userDefined": false
+      },
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "10b44b06-9577-4826-8921-dff5884c4c25",
+    "data": [
+      {
+        "text": "внезапные выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "917eb45b-097e-459b-8846-f32e68fd1eb2",
+    "data": [
+      {
+        "text": "нерабочие дни",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "dda34bf7-9b5b-4306-a2e6-609bb979d884",
+    "data": [
+      {
+        "text": "карантинные дни",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "754ca98c-1bfc-4ed1-aa22-7afa0af4f62d",
+    "data": [
+      {
+        "text": "какие ",
+        "userDefined": false
+      },
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " в ",
+        "userDefined": false
+      },
+      {
+        "text": "мае",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "07f9345a-1c45-4d9a-931e-6eb6a39094b4",
+    "data": [
+      {
+        "text": "выходные",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      },
+      {
+        "text": " про ",
+        "userDefined": false
+      },
+      {
+        "text": "июль",
+        "alias": "date-period",
+        "meta": "@sys.date-period",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8cade40-334d-467c-b0a3-fd8a9d48a503",
+    "data": [
+      {
+        "text": "расскажи про",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "cbcb86cb-3b53-4e83-bf9d-932670145744",
+    "data": [
+      {
+        "text": "когда мы будем ",
+        "userDefined": false
+      },
+      {
+        "text": "отдыхать",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "f81d7792-f9d4-4624-bdd6-acb6652da09a",
+    "data": [
+      {
+        "text": "когда будет ",
+        "userDefined": false
+      },
+      {
+        "text": "выходной",
+        "alias": "daytype",
+        "meta": "@DayType",
+        "userDefined": true
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "30630f2a-3061-49a5-a14e-d082df99da09",
     "data": [
       {
@@ -149,24 +717,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "e9957684-4a02-4a2a-8281-6be7887c8c87",
-    "data": [
-      {
-        "text": "расскажи про ",
-        "userDefined": false
-      },
-      {
-        "text": "июнь",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -341,34 +891,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "177065ad-1193-434c-b94b-25879845668f",
-    "data": [
-      {
-        "text": "какие ",
-        "userDefined": false
-      },
-      {
-        "text": "праздники",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
-      },
-      {
-        "text": " в ",
-        "userDefined": false
-      },
-      {
-        "text": "июне",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -824,20 +1346,6 @@
         "alias": "date-period",
         "meta": "@sys.date-period",
         "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "updated": 0
-  },
-  {
-    "id": "a2095e2e-f149-4236-9212-fe7aa3f29674",
-    "data": [
-      {
-        "text": "карантинные дни",
-        "alias": "daytype",
-        "meta": "@DayType",
-        "userDefined": true
       }
     ],
     "isTemplate": false,
@@ -1511,20 +2019,6 @@
     "updated": 0
   },
   {
-    "id": "db9733e1-9a47-4f37-93af-9b516de34a8b",
-    "data": [
-      {
-        "text": "через месяц",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
-    "updated": 0
-  },
-  {
     "id": "363dd368-bd53-4105-924a-1cbc7fed644b",
     "data": [
       {
@@ -1594,24 +2088,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "03a84abc-b7eb-4b17-be83-2250e7a42941",
-    "data": [
-      {
-        "text": "расскажи про ",
-        "userDefined": false
-      },
-      {
-        "text": "май",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {
@@ -1899,24 +2375,6 @@
     "updated": 0
   },
   {
-    "id": "46543720-1d1d-4d91-8eff-176421366334",
-    "data": [
-      {
-        "text": "расскажи про ",
-        "userDefined": false
-      },
-      {
-        "text": "февраль",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 0,
-    "updated": 0
-  },
-  {
     "id": "9734f035-0831-4f51-97a6-2796c6a6179b",
     "data": [
       {
@@ -1992,24 +2450,6 @@
     ],
     "isTemplate": false,
     "count": 0,
-    "updated": 0
-  },
-  {
-    "id": "2c5201fe-813d-40e0-9ab0-c436e5896c09",
-    "data": [
-      {
-        "text": "что там в ",
-        "userDefined": false
-      },
-      {
-        "text": "мае",
-        "alias": "date-period",
-        "meta": "@sys.date-period",
-        "userDefined": false
-      }
-    ],
-    "isTemplate": false,
-    "count": 1,
     "updated": 0
   },
   {

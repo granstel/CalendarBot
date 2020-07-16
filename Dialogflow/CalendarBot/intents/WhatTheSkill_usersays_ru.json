@@ -1,0 +1,74 @@
+[
+  {
+    "id": "a5a4f172-7c94-4871-8bf4-04893983299c",
+    "data": [
+      {
+        "text": "запусти навык круглый квадрат",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "e8328703-7428-4125-98d6-6206704e8941",
+    "data": [
+      {
+        "text": "запусти про саркофаг",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4b40550f-3372-4080-8782-d84ff1567910",
+    "data": [
+      {
+        "text": "навык",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "498128c7-f69e-4bd9-918f-66161cda5116",
+    "data": [
+      {
+        "text": "как называется",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "281b045d-1be6-4549-ba8a-68874445eefa",
+    "data": [
+      {
+        "text": "что за навык",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "87cb2bc2-5fc3-49a7-80c8-4a281c6ba836",
+    "data": [
+      {
+        "text": "а что это за навык",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  }
+]

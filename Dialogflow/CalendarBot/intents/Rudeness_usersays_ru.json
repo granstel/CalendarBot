@@ -1,6 +1,18 @@
 [
   {
-    "id": "6a56861a-a768-4568-a9d9-9da09dccf9fe",
+    "id": "1fa178f7-749b-4e3b-b1a3-f288007e77bf",
+    "data": [
+      {
+        "text": "блять надо позвонить ему хую",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a2792351-a92e-450b-80c4-90c4f1041f8f",
     "data": [
       {
         "text": "тупая",
@@ -12,7 +24,7 @@
     "updated": 0
   },
   {
-    "id": "f29aa79e-673c-4c67-bda7-f1b5194fd24f",
+    "id": "9dab7792-09a7-4809-8803-f29cbe109eaa",
     "data": [
       {
         "text": "ты самая тупая",

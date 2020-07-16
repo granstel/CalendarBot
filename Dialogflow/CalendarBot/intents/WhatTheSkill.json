@@ -1,0 +1,35 @@
+{
+  "id": "da06ad94-a34a-462c-a91d-31dcb46c71a3",
+  "name": "WhatTheSkill",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "ru",
+          "condition": "",
+          "speech": [
+            "Этот навык называется \"Рабочий календарь\", а если захочешь узнать что я в нём умею делать, так и скажи",
+            "Ты сейчас в навыке \"Мой рабочий календарь\". Если интересно, что я тут умею делать, так и скажи",
+            "Это навык \"Рабочий календарь\". Я расскажу о нём подробнее, если спросишь, что я в нём умею"
+          ]
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "speech": []
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "webhookForSlotFilling": false,
+  "fallbackIntent": false,
+  "events": [],
+  "conditionalResponses": [],
+  "condition": "",
+  "conditionalFollowupEvents": []
+}

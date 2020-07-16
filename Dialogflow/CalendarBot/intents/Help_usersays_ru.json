@@ -1,5 +1,195 @@
 [
   {
+    "id": "fafe4d9a-4c8c-4bdb-831c-2fe5420486d4",
+    "data": [
+      {
+        "text": "а что делать надо",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "bf15d1a2-14dc-4ea8-aeff-f35c5b463b71",
+    "data": [
+      {
+        "text": "включи",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6b8a5135-804c-44e7-8edf-ce6ce0320cac",
+    "data": [
+      {
+        "text": "какие команды",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "c9c89003-67ea-45df-b8d2-f0dac64e1d61",
+    "data": [
+      {
+        "text": "какие вопросы",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "391aa4f4-045a-4176-b546-340e8d09964d",
+    "data": [
+      {
+        "text": "расскажи подробнее о навыке",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "25247243-3023-4baf-b378-302f2cd7a82c",
+    "data": [
+      {
+        "text": "что делать",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "434eb06b-0788-4318-8918-2de67f6ea749",
+    "data": [
+      {
+        "text": "что умеешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "d5fe6c96-5c43-44d4-aa72-64de78e9560e",
+    "data": [
+      {
+        "text": "что ты умеешь делать",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "6990acb7-a336-46b6-b0d6-c83a05181596",
+    "data": [
+      {
+        "text": "что ты умеешь в ",
+        "userDefined": false
+      },
+      {
+        "text": "нём",
+        "meta": "@sys.ignore",
+        "userDefined": false
+      },
+      {
+        "text": " делать",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "a40d9bb3-263f-4024-9357-e7d28cea9da8",
+    "data": [
+      {
+        "text": "сколько дней в году",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "4284cf6d-d865-424f-a8aa-2b7a62d8c2fe",
+    "data": [
+      {
+        "text": "включи программу мастер шеф",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "0496b629-254a-415c-bf21-9dabef14581d",
+    "data": [
+      {
+        "text": "хорошо что такое кинология",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "20654449-e4f8-4964-8a10-24e085899c03",
+    "data": [
+      {
+        "text": "что такое кинология",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "83abf63a-d915-45ec-a841-fddbcd40bd0d",
+    "data": [
+      {
+        "text": "а у тебя есть какая нибудь толк или польза хотя бы",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 1,
+    "updated": 0
+  },
+  {
+    "id": "1060ae97-5be0-4beb-bac4-0917469ab03e",
+    "data": [
+      {
+        "text": "а что ты умеешь",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
     "id": "708b60e8-4e6d-4b50-9287-c1185384705a",
     "data": [
       {

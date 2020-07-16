@@ -1,6 +1,42 @@
 [
   {
-    "id": "f86249c8-2c06-49e2-a23b-77274843d3d9",
+    "id": "7235b00a-cdc2-43eb-b0fc-063c6c6f185c",
+    "data": [
+      {
+        "text": "как удалить",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "031b7e6b-cca5-4b25-ae2a-670fd19eefc8",
+    "data": [
+      {
+        "text": "как удалить тебя",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "4a9134ef-b09b-495e-a48a-cd0ad13a4335",
+    "data": [
+      {
+        "text": "как удалить историю",
+        "userDefined": false
+      }
+    ],
+    "isTemplate": false,
+    "count": 0,
+    "updated": 0
+  },
+  {
+    "id": "7a908c92-a36d-4812-a8f1-f6539aa36e6a",
     "data": [
       {
         "text": "да так ничего особенного",
